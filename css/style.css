@@ -1,0 +1,34 @@
+
+ body {
+  position: relative;
+  width: 1440px;
+  height: 4476px;
+  background-color: #00121d;
+ }
+
+.logo {
+position: absolute;
+width: 136px;
+height: 104.46px;
+left: 64px;
+top: 30px;
+}
+
+.container {
+  position: absolute;
+width: 1440px;
+height: 1012px;
+left: 0px;
+top: 90px;
+background-color: #003250;
+}
+
+.navbar1 {
+  display: inline-block;
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: white;
+}
