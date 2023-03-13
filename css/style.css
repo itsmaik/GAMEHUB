@@ -1,58 +1,119 @@
-* {
-  margin: 0 auto;
-  padding: 0;
+html {
   box-sizing: border-box;
-
+  background-color: #00121D;
+  }
+  
+  *,*:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  body {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 auto;
 }
-body {
-background-color: #00121d;
-height: 4476px;
-}
 
-
-.container {
-margin: 0 auto;  
-position: relative;
-width: 1440px;
-height: 4476px;
+.headercontainer {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 0 auto;  
+  height: 90px;
+  background-color:#00121D;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-  position: absolute;
-  width: 136px;
-  height: 104.46px;
-  left: 116px;
-  top: 15px;
-  }
-
-.box1 {
-  position: absolute;
-  width: 1440px;
-  height: 1012px;
-  left: 0px;
-  top: 90px;
-  background-color: #003250;
-}
-.navbar {
-  margin-left: 300px;
-}
-#nav-link li {
-  align-items: center;
-  padding-right: 20px;
-  list-style: none;
-  display: inline;
+  margin-left: 20px;
+  margin-top: 20px;
+  height: 90px;
+  object-fit: cover;
 }
 
-#nav-link li a {
-  align-items: center;
-  padding: 10px;
-  height: 30px;
-  display: inline-flex;
+a {
   font-family: 'Montserrat';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 20px;
-color: white;
-background-color: #00121d;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav {
+  display: inline-flex;
+  margin-bottom: -07px;
+}
+
+.nav1 {
+  margin-right: 200px;
+
+}
+
+.nav2 {
+  margin-right: 100px; 
+}
+
+.nav1 a,
+.nav2 a {
+  padding: 20px 30px;
+
+}
+
+.nav1 a:hover,
+.nav2 a:hover {
+  background: linear-gradient(0deg, #003250 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
+  transition: .3s;
+}
+
+.selected {
+  background: linear-gradient(0deg, #FF5C00 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
+}
+
+.searchcontainer {
+  display: flex;
+  background-color: #003250;
+  height: 65px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.searchbar {
+  background-color: white;
+  width: 570px;
+  height: 28px;
+  margin-left: 370px;
+  margin-bottom: 5px;
+}
+
+.searchbar input {
+  font-weight: 500;
+  font-family: 'Poppins';
+  font-size: 15px;
+  border: none;
+  width: 570px;
+  padding: 6px 50px;
+}
+
+/*----------main section----------*/
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 950px;
+  width: 100%;
+  background-color: #003250;
+  justify-content: space-between;
+}
+
+.heropicture {
+  background-image: url(/images/Elf\ front\ pic.png);
+  height: 900px;
+  width: 900px;
+  background-position: center;
+  background-size: cover;
+}
+
+.textbox h1 {
+  font-family: 'Montserrat';
+  font-size: large;
 }
