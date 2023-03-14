@@ -15,7 +15,6 @@ html {
 
 .headercontainer {
   display: flex;
-  flex-wrap: wrap;
   position: relative;
   margin: 0 auto;  
   height: 90px;
@@ -29,6 +28,10 @@ html {
   margin-top: 20px;
   height: 90px;
   object-fit: cover;
+  @media only screen and (max-width: 600px) {
+    display:none
+   }
+  
 }
 
 a {
@@ -94,6 +97,11 @@ nav {
   padding: 6px 50px;
 }
 
+.navDesktop {
+  @media only screen and (max-width: 600px) {
+   display:none
+  }
+}
 /*----------main section----------*/
 
 main {
