@@ -12,18 +12,18 @@ html {
   margin: 0 auto;
   padding: 0 auto;
 }
+/*---------- header ----------*/
 
 .headercontainer {
   display: flex;
-  position: relative;
   margin: 0 auto;  
   height: 90px;
-  background-color:#00121D;
+  background-color: #00121D;
   justify-content: space-between;
-  align-items: center;
 }
 
 .logo {
+  display: inline-flex;
   margin-left: 20px;
   margin-top: 20px;
   height: 90px;
@@ -35,6 +35,8 @@ html {
 }
 
 a {
+  margin-top: 11px;
+  display: inline-block;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 16px;
@@ -44,6 +46,7 @@ a {
 
 nav {
   display: inline-flex;
+  margin-left: 188px;
   margin-bottom: -07px;
 }
 
@@ -102,26 +105,54 @@ nav {
    display:none
   }
 }
-/*----------main section----------*/
+/*----------main and aside ----------*/
+
+.heropic {
+  width: 950px;
+  height: 880px;
+}
 
 main {
-  display: flex;
-  flex-wrap: wrap;
-  height: 950px;
-  width: 100%;
   background-color: #003250;
-  justify-content: space-between;
 }
 
-.heropicture {
-  background-image: url(/images/Elf\ front\ pic.png);
-  height: 900px;
-  width: 900px;
-  background-position: center;
-  background-size: cover;
+aside {
+  position: absolute;
+  text-align: center;
+  margin-left: 1030px;
+  top: 200px;
+  display: inline;
+  width: 491px;
 }
 
-.textbox h1 {
-  font-family: 'Montserrat';
-  font-size: large;
+h1 {
+  font-family: 'Laila', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 151%;
+
+letter-spacing: 0.235em;
+
+color: #FFFFFF;
+}
+
+p {
+  font-family: 'Poppins', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 175.5%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.asidepic1,
+.asidepic2,
+.asidepic3,
+.asidepic4 {
+  width: 206px;
+  height: 219px;
+  margin: 10px;
+  border: 1px solid #FF5C00;
 }
