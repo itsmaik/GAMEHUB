@@ -167,17 +167,24 @@ p {
 /*-------------------------------------- section1 --------------------------------------*/
 
 .section1 {
+  /*
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+}
+
+.cont2 {
+  display: inline-block;
+  margin: 60px;
+  width: 639px;
+  height: 669px;
+  border-radius: 60px;
+  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
 }
 
 .cont1 {
-  width: 639px;
-  height: 669px;
-  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  display: block;
   
-
 }
 
 .featandrec {
@@ -193,6 +200,7 @@ p {
 }
 
 .section1pic {
+  border-radius: 60px;
   margin: 60px;
   display: inline;
   width: 677px;
@@ -200,6 +208,7 @@ p {
   border: 5px solid #000000;
   box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
 }
+
 
 .psec1 {
   font-family: 'Poppins';
