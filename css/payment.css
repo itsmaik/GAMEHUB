@@ -1,0 +1,32 @@
+.method-container {
+  background-color: #003250;
+  height: 150px;
+  width: 571px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.payment-methods {
+  flex-direction: column;
+}
+
+.card-details {
+  background-color: #003250;
+  display: flex;
+  height: 461px;
+  width: 906px;
+  margin-top: 40px;
+}
+
+.fa-cc-paypal,
+.fa-credit-card {
+  color: white;
+}
