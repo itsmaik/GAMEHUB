@@ -187,7 +187,10 @@ p {
   
 }
 
+/*-----------------------------------divid lines start------------------------------------*/
 .featandrec {
+  position: relative;
+  margin: 25px auto;
   text-align: center;
   font-family: 'Poppins';
   font-style: normal;
@@ -196,8 +199,39 @@ p {
   line-height: 30px;
   letter-spacing: 0.075em;
   color: #FFFFFF;
-
 }
+
+.featandrec::before {
+  background-color:#FF5C00;
+  display: block;
+  width: 530px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: -1;
+}
+
+.divider {
+  width: 100%;
+  height: 08px;
+  margin: 25px 0;
+  background: #003251;
+}
+
+.featandrec::after {
+  background-color: #FF5C00;
+  display: block;
+  width: 530px;
+  height: 8px;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 40%;
+  z-index: -1;
+}
+/*--------------------------------------divid lines finish---------------------------*/
 
 .section1pic {
   border-radius: 60px;
