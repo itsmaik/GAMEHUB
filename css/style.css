@@ -11,7 +11,7 @@ html {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 auto;
-  border: 8px solid #003250;
+  border: 12px solid #003250;
 }
 /*----------------------------------------- header ---------------------------------------*/
 
@@ -189,7 +189,7 @@ p {
 }
 
 /*-----------------------------------divide lines start------------------------------------*/
-.featandrec {
+.head-line {
   position: relative;
   margin: 25px auto;
   text-align: center;
@@ -202,7 +202,7 @@ p {
   color: #FFFFFF;
 }
 
-.featandrec::before {
+.head-line::before {
   background: linear-gradient(90deg, #003250, #FF5C00);
   display: block;
   width: 530px;
@@ -221,7 +221,7 @@ p {
   background: #003251;
 }
 
-.featandrec::after {
+.head-line::after {
   background: linear-gradient(90deg, #FF5C00, #003250);
   display: block;
   width: 530px;
@@ -288,12 +288,13 @@ button {
   text-align: center;
   letter-spacing: 0.4px;
   border-radius: 10px;
+  border: none;
 }
 
-.sec2pic1,
-.sec2pic2,
-.sec2pic3,
-.sec2pic4 {
+.secpic1,
+.secpic2,
+.secpic3,
+.secpic4 {
   width: 300px;
   height: 400px;
   border: 5px solid #000000;
@@ -310,6 +311,48 @@ button {
   margin-left: 140px;
 }
 
-#newsletterbtn {
+#sign-up {
   letter-spacing: 2.4px;
+}
+
+/*--------------------------------------divide lines finish---------------------------*/
+footer {
+  margin-top: 50px;
+  height: 110px;
+  display: flex;
+  background-color: #00121D;
+  border-top: 1px solid #003251;
+}
+
+.logo-fot img {
+  width: 105px;
+  height: 67px;
+}
+
+.logo-fot {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 100%;
+  padding-left: 40px;
+}
+
+.text-fot,
+.text-fot2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.img-fot {
+  position: absolute;
+  width: 260px ;
+  height: 15px;
+  margin-top: -30px;
+  opacity: 0.8;
+  right: 750px;
 }
