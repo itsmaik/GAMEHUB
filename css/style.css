@@ -348,11 +348,12 @@ footer {
   padding-left: 40px;
 }
 
-.img-fot {
+.text-fot2::after {
+  content: "";
+  display: inline-block;
+  background-image: url(/images/payment\ footer.png);
+  width: 500px;
+  height: 28px;
+  margin-left: 8px;
   position: absolute;
-  width: 260px ;
-  height: 15px;
-  margin-top: -30px;
-  opacity: 0.8;
-  right: 750px;
 }
