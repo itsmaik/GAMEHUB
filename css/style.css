@@ -9,6 +9,7 @@ html {
   
   body {
   max-width: 1600px;
+  height: auto;
   margin: 0 auto;
   padding: 0 auto;
   border: 12px solid #003250;
@@ -29,13 +30,9 @@ html {
   margin-top: 20px;
   height: 90px;
   object-fit: cover;
-  @media only screen and (max-width: 600px) {
-    display:none
-   }
-  
 }
 
-a {
+.nav-link {
   margin-top: 11px;
   display: inline-block;
   font-family: 'Montserrat';
@@ -43,6 +40,16 @@ a {
   font-size: 16px;
   color: white;
   text-decoration: none;
+  padding: 20px 30px;
+}
+
+.nav-link:hover {
+  background: linear-gradient(0deg, #003250 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
+  transition: .3s;
+}
+
+#selected {
+  background: linear-gradient(0deg, #FF5C00 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
 }
 
 nav {
@@ -57,23 +64,7 @@ nav {
 }
 
 .nav2 {
-  margin-right: 100px; 
-}
-
-.nav1 a,
-.nav2 a {
-  padding: 20px 30px;
-
-}
-
-.nav1 a:hover,
-.nav2 a:hover {
-  background: linear-gradient(0deg, #003250 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
-  transition: .3s;
-}
-
-.selected {
-  background: linear-gradient(0deg, #FF5C00 20.82%, rgba(255, 96, 1, 0.01) 100.48%);
+  margin-right: 0px; 
 }
 
 .searchcontainer {
@@ -101,11 +92,6 @@ nav {
   padding: 6px 50px;
 }
 
-.navDesktop {
-  @media only screen and (max-width: 600px) {
-   display:none
-  }
-}
 /*-------------------------------------- main and aside --------------------------------------*/
 
 .heropic {
@@ -354,8 +340,57 @@ footer {
   content: "";
   display: inline-block;
   background-image: url(/images/payment\ footer.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 500px;
-  height: 28px;
-  margin-left: 8px;
+  height: 18px;
   position: absolute;
+}
+
+
+@media (max-width: 800px) {
+  footer {
+    height: auto;
+  }
+  
+  .logo-fot img {
+      width: 100px;
+      height: 65px;
+  }
+  
+  .text-fot br {
+      display: none;
+  }
+
+  .text-fot,
+  .text-fot2 {
+      font-size: 12px;
+  }
+
+  .fottext img {
+      height: 16px;
+  }
+
+  .logo-fot {
+    padding: 4px 40px;
+  }
+}
+
+@media (max-width: 1081px) {
+  footer {
+      padding: 20px;
+      height: 150px;
+  }
+
+  .logo-fot img {
+      width: 130px;
+      height: 90px;
+  }
+
+  .text-fot p span:hover {
+      cursor: pointer;
+      text-decoration: underline;
+      text-decoration-color: #FF5C00;
+  }
 }

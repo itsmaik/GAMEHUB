@@ -1,61 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Payment.css">
-    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>payment</title>
 </head>
-<body>
-    <a href="/css/shop.html"><i>CONTINUE SHOPPING</i></a>
 
-<div class="method-container">
-    <h1 class="headline">Select payment method</h1>
 
-    <div class="payment-methods">
-        <div class="credit-card">
-            <i class="fa-solid fa-credit-card"></i>
-            <p>Credit Card</p>
-        </div>
+<!------------------------------ header ------------------------------>
 
-        <div class="debit-card">
-            <i class="fa-regular fa-credit-card"></i>
-            <p>Debit Card</p>
-        </div>
+<header>
 
-        <div class="Paypal">
-            <i class="fa-brands fa-cc-paypal"></i>
-        <p>Paypal</p>
-        </div>
-    </div> 
-</div>
+  <div class="headercontainer">
+      <div class="logo">
+        <img class="logo" src="images/GameHub_Logo.png" alt="logo">
+       
 
-<div class="card-details">
-    <h1 class="headline">Credit card details</h1>
+        <nav class="navDesktop">
+          <div class="nav1">
+              <a class="nav-link" href="index.html" id="selected">Home</a>
+              <a class="nav-link" href="#">Shop</a>
+              <a class="nav-link" href="#">Trade-in</a>
+              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#">About</a>
+          </div>
+          <div class="nav2"> 
+              <a class="nav-link" href="#">Log In / Sign Up</a>
+              <a class="nav-link" href="#">View Cart</a>
+          </div> 
+        </nav>
+      </div>
+  </div>
+   
+  <div class="searchcontainer">
+    <div class="searchbar">  
+      <form>
+        <input type="text" placeholder="Search">
+      </form>
+    </div>
+  </div>
+
+ </header>
+
+ <!------------------------------ header ------------------------------>
+
+    <a id="continue-btn" href="shop.html">Continue Shopping</a>
+
+    <div class="payment-mtd">
+        <h1>Select payment method</h1>
+
+
+    </div>
+
     
-    <p>Select card type</p>
-    <form action="card-type">
-        <input type="text">
-    </form>
-    
-    <p>Name on card</p>
-    <form action="card-name">
-        <input type="text">
-    </form>
-
-    <p>Card number</p>
-    <form action="card-number">
-        <input type="text">
-    </form>
-
-    <p>Security code</p>
-    <form action="security-code">
-        <input type="text">
-    </form>
-</div>
 </body>
 </html>

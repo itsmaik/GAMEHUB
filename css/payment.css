@@ -1,33 +1,37 @@
-
-.method-container {
-  background-color: #003250;
-  height: 150px;
-  width: 571px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html {
+  box-sizing: border-box;
+  background-color: #00121D;
+  }
+  
+  *,*:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  body {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 12px solid #003250;
 }
 
-.headline {
-  text-align: center;
+/*----------------------------------------header------------------------------------*/
+
+#continue-btn {
+  margin: 0 auto;
+  padding: 10px 24px;
+  background-color: #FF5C00;
+  height: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
 }
 
-.payment-methods {
-  flex-direction: column;
-}
-
-.card-details {
-  background-color: #003250;
-  display: flex;
-  height: 461px;
-  width: 906px;
-  margin-top: 40px;
-}
-
-.fa-cc-paypal,
-.fa-credit-card {
-  color: white;
+#continue-btn:hover {
+  background-color: white;
+  transition: .5s;
 }
