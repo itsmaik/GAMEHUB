@@ -197,7 +197,7 @@ p {
   position: absolute;
   left: 0;
   top: 40%;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 
 .divider {
@@ -216,7 +216,7 @@ p {
   position: absolute;
   right: 0;
   top: 40%;
-  z-index: -1;
+  /*z-index: -1;*/
 }
 /*--------------------------------------divide lines finish---------------------------*/
 

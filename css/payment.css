@@ -24,14 +24,30 @@ html {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  display: inline;
+  display: inline-block;
   text-align: center;
   border-radius: 10px;
   text-decoration: none;
   color: black;
+  margin-left: 250px;
+  margin-top: 50px;
 }
 
 #continue-btn:hover {
   background-color: white;
   transition: .5s;
+}
+
+.payment-mtd {
+  width: 571px;
+  height: 143px;
+  background-color: #003250;
+  display: flex;
+  margin: 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+
 }

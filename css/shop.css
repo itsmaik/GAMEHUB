@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+  background-color: #00121D;
+  }
+  
+  *,*:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  body {
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 12px solid #003250;
+}
+
+/*----------------------------------------- main---------------------------------------*/
+
+.main-shop {
+  background: linear-gradient(180deg, #011420 0%, #01324F 150%);
+  height: auto;
+}
+
+.container-btn {
+  display: flex;
+}
+
+#filter {
+  margin-top: 100px;
+  margin-left: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#best-match {
+  margin-top: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+}
+
+.sort-by {
+  margin-top: 105px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+#divider-shop {
+  margin-top: ;
+}
+
+/*----------------------------------------- top sellers ---------------------------------------*/
+
+.grid-scr {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: grid;
+  grid-template-columns:400px 400px 400px 400px 400px 400px 400px 400px 400px;
+  overflow: scroll;
+  gap: 80px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scroll-behavior: smooth;
+}
+
+.grid-scr::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.img-scr {
+  width: 370px;
+  height: 480px;
+  object-fit: cover;
+}
+
+.grid-scr:hover {
+  cursor: pointer;
+}
+
+/*----------------------------------------- trade-in selection ---------------------------------------*/
+
+.grid-standard-1 {
+  margin: 80px 30px;
+  display: grid;
+  grid-template-columns: 46% 27% 27%;
+  grid-template-rows: 54% 46%;
+  height: 815px;
+  max-width: 100%;
+  justify-items: center ;
+}
+
+.grid-standard-2 {
+  margin: 80px 30px;
+  display: grid;
+  grid-template-columns: 27% 27% 46%;
+  grid-template-rows: 54% 46%;
+  height: 815px;
+  max-width: 100%;
+  justify-items: center ;
+}
+
+.img-standard-1 img,
+.img-standard-2 img {
+  width: 640px;
+  height: 815px;
+  object-fit: cover;
+  border: 5px solid #000000;
+  box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
+  
+}
+
+.img-standard img {
+  width: 315x;
+  height: 372px;
+  object-fit: cover;
+  border: 5px solid #000000;
+  box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
+}
+
+#pic3 {
+  grid-column-start: 2;
+}
+#pic2 {
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+/*----------------------------------------- page slc ---------------------------------------*/
+
+.page-slc {
+  height: 300px;
+}
