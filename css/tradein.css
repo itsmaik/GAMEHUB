@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  background-color: #00121D;
+  }
+  
+  *,*:before, *:after {
+      box-sizing: inherit;
+  }
+  
+  body {
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 auto;
+  border: 12px solid #003250;
+}
+
+.trade-in-text {
+  display: flex;
+  margin: 20px 190px;
+  justify-content: space-between;
+}
+
+.buy-sell {
+  margin-top: 40px;
+  margin-bottom: 0;
+  width: 325px;
+  height: 200px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 117px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+
+}
+
+
+.trade-in-p {
+  margin-top: 50px;
+  margin-bottom: 0;
+  width: 570px;
+  height: 176px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 143.9%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
