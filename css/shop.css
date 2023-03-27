@@ -147,5 +147,29 @@ html {
 /*----------------------------------------- page slc ---------------------------------------*/
 
 .page-slc {
-  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.page-slc i,
+.page-slc p {
+  background-color: white;
+  color: #00121D;
+  font-size: 23px;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  margin: 12px;
+  margin-bottom: 200px;
+  cursor: pointer;
+}
+
+.page-slc p {
+  font-family: 'poppins';
+  font-weight: 500;
+}
+
+.page-slc i {
+  display: grid;
+  align-items: center;
 }
