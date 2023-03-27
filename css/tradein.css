@@ -9,15 +9,24 @@ html {
   
   body {
   max-width: 1600px;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   padding: 0 auto;
   border: 12px solid #003250;
 }
 
+.main-shop {
+  /*
+  background-image: url(/images/angel\ img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  */
+}
+
 .trade-in-text {
   display: flex;
-  margin: 20px 190px;
+  margin: 20px 200px;
   justify-content: space-between;
 }
 
