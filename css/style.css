@@ -295,6 +295,7 @@ button {
   width: 1300.34px;
   height: 371.9px;
   margin-left: 140px;
+  margin-bottom: 150px;
 }
 
 #sign-up {
@@ -305,7 +306,6 @@ button {
 
 
 footer {
-  margin-top: 50px;
   height: 110px;
   display: flex;
   background-color: #00121D;
