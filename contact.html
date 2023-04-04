@@ -31,10 +31,10 @@
 
          <nav class="navDesktop">
            <div class="nav1">
-               <a class="nav-link" href="index.html" id="selected">Home</a>
+               <a class="nav-link" href="index.html">Home</a>
                <a class="nav-link" href="shop.html">Shop</a>
                <a class="nav-link" href="tradein.html">Trade-in</a>
-               <a class="nav-link" href="contact.html">Contact</a>
+               <a class="nav-link" href="contact.html" id="selected">Contact</a>
                <a class="nav-link" href="about.html">About</a>
            </div>
            <div class="nav2"> 
@@ -55,7 +55,7 @@
 
   </header>
 
-<!------------------------------------------------------ section ------------------------------------------------------>
+  <!------------------------------------------------------ section ------------------------------------------------------>
 
   <section class="contact-box">
     <div class="faq">
@@ -96,16 +96,51 @@
     </div>
   </section>
 
+<!------------------------------------------------------ section ------------------------------------------------------>
+
     <img  class="contact-img" src="/images/contact img/contact page pic.png" alt="">
 
-    <div>
-      <h1>CONTACT US</h1>
-      <p>Have a question or concern? Reach out to us anytime. We're always here to help and support you.</p>
-      <i class="fa-solid fa-phone"></i>
-      <i class="fa-solid fa-message"></i>
-      <i class="fa-solid fa-at"></i>
+<!------------------------------------------------------ section ------------------------------------------------------>
+
+    <div class="contact-info">
+      <h1 class="faq-h1">CONTACT US</h1>
+      <p class="contact-info-p">Have a question or concern? Reach out to us anytime. We're always here to help and support you.</p>
+
+      <div class="contact-info-icons">
+        <i class="fa-solid fa-phone" id="info-icon"><p>+47 98 45 67 86</p></i>
+        <i class="fa-solid fa-message" id="info-icon"><p>Chat</p></i>
+        <i class="fa-solid fa-at" id="info-icon"><p>gamehub@outlook.com</p></i>
+      </div>
+
+        <form id="contact">
+          <input id="details" type="text" placeholder="Name:">
+        </form>
+
+        <form id="contact">
+            <input id="details" type="text" placeholder="Email:">
+        </form>
+
+        <form id="contact-message" class="message-box">
+            <textarea placeholder="Your message...." id='textarea'></textarea>
+        </form>
+
+        <button type="submit" class="send-btn">SEND</button>
     </div>
   
+    <!------------------------------------------------------ footer ------------------------------------------------------>
+
+    <footer>
+      <div class="logo-fot">
+        <img src="/images/logo img/GameHub_Logo.png" alt="page logo">
+      </div>
+      <div class="fottext-img">
+        <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website, including but not limited to text, graphics, logos,
+           images, and software, is the property of Game Hub and protected by international copyright laws. The reproduction, modification, distribution, 
+           or republication of the content without express written consent from Game Hub is strictly prohibited. Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
+        <p class="text-fot2"> Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
+        
+      </div> 
+    </footer>
 
 </body>
 
