@@ -28,7 +28,7 @@ html {
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 180px;
 }
 
 .faq {
@@ -52,6 +52,15 @@ html {
 
 .question-box {
   text-align: left;
+}
+
+.q-box {
+/*
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  */
 }
 
 .faq-h2 {

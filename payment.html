@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,61 +14,110 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <title>PAYMENT</title>
-</head>
-
-
-<!------------------------------ header ------------------------------>
-
-<header>
-
-  <div class="headercontainer">
-      <div class="logo">
-        <img class="logo" src="images/logo img/GameHub_Logo.png" alt="logo">
-       
-
-        <nav class="navDesktop">
-          <div class="nav1">
-              <a class="nav-link" href="index.html" id="selected">Home</a>
-              <a class="nav-link" href="#">Shop</a>
-              <a class="nav-link" href="#">Trade-in</a>
-              <a class="nav-link" href="#">Contact</a>
-              <a class="nav-link" href="#">About</a>
-          </div>
-          <div class="nav2"> 
-              <a class="nav-link" href="#">Log In / Sign Up</a>
-              <a class="nav-link" href="#">View Cart</a>
-          </div> 
-        </nav>
-      </div>
-  </div>
-   
-  <div class="searchcontainer">
-    <div class="searchbar">  
-      <form>
-        <input type="text" placeholder="Search">
-      </form>
-    </div>
-  </div>
-
- </header>
+ </head>
 
  <!------------------------------ header ------------------------------>
 
+ <body>
+  <header>
+
+    <div class="headercontainer">
+        <div class="logo">
+          <img class="logo" src="images/logo img/GameHub_Logo.png" alt="logo">
+        
+
+          <nav class="navDesktop">
+            <div class="nav1">
+                <a class="nav-link" href="index.html" id="selected">Home</a>
+                <a class="nav-link" href="#">Shop</a>
+                <a class="nav-link" href="#">Trade-in</a>
+                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#">About</a>
+            </div>
+            <div class="nav2"> 
+                <a class="nav-link" href="#">Log In / Sign Up</a>
+                <a class="nav-link" href="#">View Cart</a>
+            </div> 
+          </nav>
+        </div>
+    </div>
+    
+    <div class="searchcontainer">
+      <div class="searchbar">  
+        <form>
+          <input type="text" placeholder="Search">
+        </form>
+      </div>
+    </div>
+
+  </header>
+
+ <!------------------------------ first box ------------------------------>
+ <div class="divider"></div>
  <h1 class="head-line">CHECK OUT</h1>
 
     <a id="continue-btn" href="shop.html">Continue Shopping</a>
 
     <div class="payment-mtd">
+      <h2 class="payment-h2">Select payment method</h1>
       <div class="row">
-        <h1>Select payment method</h1>
-        <div class="selected"><i class="fa-solid fa-credit-card"></i>Credit card</div>
-        <div><i class="fa-solid fa-credit-card"></i>Debit card</div>
-        <div><i class="fa-brands fa-cc-paypal"></i>Paypal</div>
+        <div class="selected"><i class="fa-solid fa-credit-card"></i><p>Credit card</p></div>
+        <div class="card-icons"><i class="fa-solid fa-credit-card"></i><p>Debit card</p></div>
+        <div class="card-icons"><i class="fa-brands fa-cc-paypal"></i><p>Paypal</p></div>
       </div>
-
-
     </div>
 
+    <!------------------------------ second box ------------------------------>
+
+ <div class="card-details">
+   <h2 class="payment-h2" id="h2-p">Card details</h2>
+    <p>Selected card type</p>
+
+    <form id="card-detail">
+      <input type="text">
+    </form>
+
+      <p>Name on card</p>
+      <form id="card-detail" action="">
+        <input type="text">
+      </form>
+
+      <p>Card number</p>
+      <form id="card-detail" action="">
+        <input type="number">
+      </form>
+
+      <p>Security code</p>
+      <form id="card-detail" action="">
+        <input type="number">
+      </form>
+      
+      <div class="exp-date">
+        <p>Expiration date</p>
+        <form id="card-detail-1" action="">
+          <input type="number">
+        </form>
+
+        <form id="card-detail-2" action="">
+          <input type="number">
+        </form>
+      </div>
+    </div>
     
-</body>
+<!------------------------------ footer ------------------------------>
+
+    <footer>
+      <div class="logo-fot">
+        <img src="/images/logo img/GameHub_Logo.png" alt="page logo">
+      </div>
+      <div class="fottext-img">
+        <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website, including but not limited to text, graphics, logos,
+           images, and software, is the property of Game Hub and protected by international copyright laws. The reproduction, modification, distribution, 
+           or republication of the content without express written consent from Game Hub is strictly prohibited. Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
+        <p class="text-fot2"> Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
+        
+      </div> 
+    </footer>  
+ </body>
+
 </html>
