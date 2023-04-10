@@ -1,28 +1,4 @@
-html {
-  box-sizing: border-box;
-  background-color: #00121D;
-  }
-  
-  *,*:before, *:after {
-      box-sizing: inherit;
-  }
-  
-  body {
-  max-width: 1600px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 0 auto;
-  border: 12px solid #003250;
-}
 
-.main-shop {
-  /*
-  background-image: url(/images/angel\ img.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  */
-}
 
 .trade-in-text {
   display: flex;
