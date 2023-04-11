@@ -1,0 +1,104 @@
+.main-grid {
+  height: 1400px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 50% 50%;
+}
+
+.grid-box-3 img {
+  width: 316px;
+  height: 284px;
+  filter: drop-shadow(3px 4px 4px #003250);
+  border: 1px solid #FF6001;
+  margin-bottom: 30px;
+}
+
+.grid-box-3 {
+  margin-top: 100px;
+  margin-left: 30px;
+}
+
+.box1-pic1 {
+  margin-left: 100px;
+  width: 427px;
+  height: 418px;
+  filter: drop-shadow(3px 4px 4px #003250);
+  border: 1px solid #FF6001;
+}
+
+.box2-pic1 {
+  width: 347px;
+  height: 440px;
+  filter: drop-shadow(3px 4px 4px #003250);
+  border: 1px solid #FF6001;
+  object-fit: cover;
+}
+
+.grid-box-1 {
+  display: grid;
+  grid-template-columns: 48% 52%;
+  grid-template-rows: 100%;
+  margin-top: 100px;
+}
+
+.game-desc-1 {
+  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  width: 554px;
+  height: 421px;
+  
+}
+
+.grid-box-2 {
+  width: 980px;
+  height: 572px;
+  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 90% 10%;
+  margin-left: 100px;
+  padding: 60px;
+}
+
+.p-game-desc-2 {
+  width: 430px;
+  height: 351px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 169.5%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.game-desc-2 {
+  height: 500px;
+}
+
+#add-to-card {
+  grid-column-start: 2;
+  margin-top: 10px;
+  width: 185px;
+}
+
+#card-detail-2 input,
+#card-detail-1 input {
+  height: 50px;
+  width: 400px;
+  position: relative;
+  left: 40px;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+.h1-desc {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 50px;
+}
