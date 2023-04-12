@@ -6,6 +6,12 @@
   border-radius: 0px;
   margin-bottom: 50px;
   margin-left: 250px;
+  display: grid;
+}
+
+.first-box {
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 15% 40% 20% 25%;
 }
 
 .second-box {
@@ -31,8 +37,60 @@
 }
 
 #shop-pic {
-  width: 100px;
-  height: 120px;
+  width: 140px;
+  height: 160px;
   box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
   object-fit: cover;
+  margin-left: 120px;
+}
+
+.line-1,
+.line-2 {
+  display: contents;
+}
+.line-4 {
+  grid-column-start: 4;
+  grid-row-start: 3;
+  margin-top: 25px;
+}
+
+.h-shop {
+  margin-left: 50px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;  
+  display: grid;
+}
+
+
+.p-shop {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+
+#card-detail-2 input,
+#card-detail-1 input {
+  height: 40px;
+  width: 300px;
+  position: relative;
+  left: 88px;
+  display: inline-block;
+  margin: 10px 30px;
+}
+
+#card-detail-1 input {
+  margin-top: 40px;
+}
+
+#h-line-4 {
+  padding-top: 30px;
 }
