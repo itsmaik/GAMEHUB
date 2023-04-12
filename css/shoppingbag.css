@@ -1,0 +1,38 @@
+.first-box,
+.second-box {
+  width: 1090px;
+  height: 420px;
+  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  border-radius: 0px;
+  margin-bottom: 50px;
+  margin-left: 250px;
+}
+
+.second-box {
+  margin-bottom: 180px;
+}
+
+#continue-btn {
+  margin: 0 auto;
+  padding: 10px 24px;
+  background-color: #FF5C00;
+  height: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  margin-left: 250px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#shop-pic {
+  width: 100px;
+  height: 120px;
+  box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
+  object-fit: cover;
+}
