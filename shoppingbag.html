@@ -11,9 +11,7 @@
   <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/shoppingbag.css">
- 
   <title>GAMEHUB | GAME DESCRIPTION</title>
-
 </head>
 
  <body>
@@ -30,8 +28,8 @@
      </label>
 
      <nav class="nav1">
-         <a class="nav-link" href="index.html" id="selected">Home</a>
-         <a class="nav-link" href="shop.html">Shop</a>
+         <a class="nav-link" href="index.html">Home</a>
+         <a class="nav-link" href="shop.html" id="selected">Shop</a>
          <a class="nav-link" href="tradein.html">Trade</a>
          <a class="nav-link" href="contact.html">Contact</a>
          <a class="nav-link" href="about.html">About</a>
@@ -54,7 +52,7 @@
     </form>
   </div>
 </div>
-<!------------------------------main------------------------------>   
+<!------------------------------First box------------------------------>   
   <div class="divider"></div>
   <h1 class="head-line">CHECK OUT</h1>
   <a id="continue-btn" href="shop.html">Continue Shopping</a>
@@ -68,22 +66,61 @@
     </div>
     <div class="line-3">
       <form id="card-detail-1" action="">
-        <input type="number">
+        <input type="text" placeholder="Use a gift card">
       </form>
       <form id="card-detail-2" action="">
-        <input type="number">
+        <input type="text" placeholder="Type your promotional code">
       </form>
     </div>
     <div class="line-4">
       <p class="p-shop">subtotal: $39,99</p> <p class="p-shop">shipping: $4,00</p> <h1 class="h-shop" id="h-line-4">TOTAL PRICE: $43,99</h1>
     </div>
   </div>
-  
+  <!------------------------------Second box------------------------------>
   <div class="second-box">
+    <div class="card-details">
+      <h1 class="h-shop" id="adress">ADRESS INFORMATION</h1>
+
+       <p>Name</p>
+       <form class="card-detail">
+         <input type="text">
+       </form>
+   
+         <p>Country</p>
+         <form class="card-detail" action="">
+           <input type="text">
+         </form>
+   
+         <p>City</p>
+         <form class="card-detail" action="">
+           <input type="text">
+         </form>
+   
+         <p>Adress</p>
+         <form class="card-detail" action="">
+           <input type="text">
+         </form>
+
+         <p>Zip code</p>
+         <form class="card-detail" action="">
+           <input type="text">
+         </form>
+        <div class="sub-box-1">
+          <h1 class="h-shop" id="contact">CONTACT DETAILS</h1>
+           <p>E-mail</p>
+           <form class="card-detail" id="e-mail" action="">
+             <input type="text">
+           </form>
+
+           <p>Phone number</p>
+           <form class="card-detail" id="phone" action="">
+             <input type="number">
+           </form>
+           <a id="go-to-payment" href="shop.html">GO TO PAYMENT</a>
+        </div>
+       </div>
 
   </div>
-
-
   <!------------------------------footer------------------------------>  
   <footer class="desktop-footer">
     <div class="logo-fot">
@@ -94,12 +131,9 @@
          images, and software, is the property of Game Hub and protected by international copyright laws. The reproduction, modification, distribution, 
          or republication of the content without express written consent from Game Hub is strictly prohibited. Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
       <p class="text-fot2"> Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      
     </div> 
   </footer>
-
   <!-------------------------------- footer-mobile--------------------------------->
-  
   <footer class="mobile-footer">
     <div class="logo-fot">
       <img src="/images/logo img/GameHub_Logo.png" alt="page logo">
@@ -108,9 +142,7 @@
       <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website is the property of Game Hub and protected by international copyright laws.</p> 
       <p class="text-fot">Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
       <p class="text-fot">Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      
     </div> 
   </footer>
-
  </body>
 </html>
