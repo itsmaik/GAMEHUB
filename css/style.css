@@ -36,7 +36,7 @@ header {
 
 .nav1 {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(7, auto);
   align-items: center;
 }
 
@@ -84,87 +84,12 @@ header {
 
 #menu-checkbox:checked ~ .nav1, .nav2 {
   display: block;
+  position: absolute;
+  background: #003250;
+  left: 0;
+  top: 100%;
 }
 
-@media only screen and (max-width: 1300px) {
-  header {
-    gap: 1%;
-  }
-
-  .nav2 .nav-link {
-    padding: 0% 4%;
-  }
-  
-  .nav1 .nav-link {
-    padding: 0% 8%;
-  }
-
-  .logo-container {
-    margin: 0;
-  }
-
-  .navigation {
-    margin-left: 8%;
-  }
-
-  .nav1 {
-    gap: 0%;
-  }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 1080px) {
-  
-  header {
-    display: flex;
-    gap: 0%;
-    width: 100%;
-    background-color: #00121D;
-    position: relative;
-    height: auto;
-  }
-
-  .hamburger-icon {
-    display: block;
-    color: white;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-    background-color: #00121D;
-  }
-
-  .logo {
-    width: 120px;
-    margin: 10px 10px 0px 10px;
-  }
-
-  .nav1,
-  .nav2 {
-    display: none;
-    width: 100%;
-  }
-
-  .navigation,
-  .navigation-2 {
-    display: flex;
-    flex-direction: column;
-    background-color: #003250;
-  }
-
-  .nav-link {
-    font-size: 14px;
-    display: block;
-    height: auto;
-  }
-
-  #selected {
-    background: none;
-    height: auto;
-  }
-
-  .nav-link:hover {
-    background: none;
-  }
-}
 
 .searchcontainer {
   display: flex;
@@ -191,37 +116,10 @@ header {
   padding: 6px 50px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1080px) {
-
-  .searchbar {
-    margin: 0 auto;
-    width: 80%;
-    height: 60%;
-  }
-
-  .searchbar input {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .searchbar {
-    margin: 0 auto;
-    width: 80%;
-    height: 60%;
-  }
-
-  .searchbar input {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-/*-------------------------------------- main and aside --------------------------------------*/
+/*-------------------------------------- main --------------------------------------*/
 
 .heropic {
-  width: 990px;
+  width: 60%;
   height: 880px;
   object-fit: cover;
 }
@@ -233,25 +131,15 @@ main {
   flex-direction: column;
 }
 
-aside {
-  position: absolute;
-  text-align: center;
-  margin-left: 1050px;
-  top: 200px;
-  display: inline;
-  width: 491px;
-}
-
 .headerhero {
   font-family: 'Laila', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 151%;
-
-letter-spacing: 0.235em;
-
-color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.235em;
+  color: #FFFFFF;
 }
 
 p {
@@ -280,7 +168,6 @@ p {
 }
 
 /*-------------------------------------- section1 --------------------------------------*/
-
 
 .cont2 {
   display: inline-block;
@@ -318,7 +205,6 @@ p {
   position: absolute;
   left: 0;
   top: 40%;
-  /*z-index: -1;*/
 }
 
 .divider {
@@ -331,13 +217,12 @@ p {
 .head-line::after {
   background: linear-gradient(90deg, #FF5C00, #003250);
   display: block;
-  width: 530px;
+  width: 30%;
   height: 8px;
   content: "";
   position: absolute;
   right: 0;
   top: 40%;
-  /*z-index: -1;*/
 }
 /*--------------------------------------divide lines finish---------------------------*/
 
@@ -402,25 +287,56 @@ button {
 .secpic2,
 .secpic3,
 .secpic4 {
-  width: 300px;
+  width: 20%;
   height: 400px;
   border: 5px solid #000000;
   box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
   object-fit: cover;
-  margin-left: 80px;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 0px;
+  margin-left: 4%;
 }
 
 #newsletter {
-  width: 1300.34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
   height: 371.9px;
-  margin-left: 140px;
+  margin: 0 auto;
+  margin-top: 50px;
   margin-bottom: 180px;
+}
+
+#newsletter h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#subscribe {
+  display: flex;
+  width: 40%;
+  height: 40px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+#subscribe input {
+  font-family: "Poppings" sans-serif;
+  font-size: 14px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding-left: 15px;
+  border-radius: 10px;
 }
 
 #sign-up {
   letter-spacing: 2.4px;
+  float: right;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
 }
 
 /*--------------------------------------footer---------------------------*/
@@ -477,9 +393,120 @@ button {
   display: none;
 }
 
-/*----------------MOBILE---------------*/
+#home-main-container {
+  display: flex;
+  gap: 40px;
+  flex-direction: row;
+}
+
+#hero-container {
+  width: 40%;
+}
+
+.heropic img {
+  width: 100%;
+}
+.asidepics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+/*----------------------------------------media queries-------------------------------------*/
+@media only screen and (max-width: 1300px) {
+  header {
+    gap: 1%;
+  }
+
+  .nav2 .nav-link {
+    padding: 0% 4%;
+  }
+  
+  .nav1 .nav-link {
+    padding: 0% 8%;
+    text-align: center;
+  }
+
+  .logo-container {
+    margin: 0;
+  }
+
+  .navigation {
+    margin-left: 8%;
+  }
+
+  .nav1 {
+    gap: 0%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1080px) {
+  
+  header {
+    display: flex;
+    gap: 0%;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #00121D;
+    position: relative;
+    height: auto;
+  }
+
+  .hamburger-icon {
+    display: block;
+    color: white;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    background-color: #00121D;
+  }
+
+  .logo {
+    width: 120px;
+    margin: 10px 10px 0px 10px;
+  }
+
+  .nav1,
+  .nav2 {
+    display: none;
+    width: 100%;
+  }
+
+  .navigation,
+  .navigation-2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #003250;
+  }
+
+  .nav-link {
+    font-size: 14px;
+    display: block;
+    height: auto;
+  }
+
+  #selected {
+    background: none;
+    height: auto;
+  }
+
+  .nav-link:hover {
+    background: none;
+  }
+}
+
 
 @media only screen and (min-width: 0px) and (max-width: 767px) {
+
+  .searchbar {
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+  }
+
+  .searchbar input {
+    width: 100%;
+    height: 100%;
+  }
 
   .mobile-version {
     display: flex;
@@ -515,7 +542,10 @@ button {
     margin-bottom: 40px;
   }
 
-  .asidepic1-mob, .asidepic2-mob, .asidepic3-mob, .asidepic4-mob {
+  .asidepic1-mob,
+  .asidepic2-mob,
+  .asidepic3-mob,
+  .asidepic4-mob {
     height: 200px;
     object-fit: cover;
     width: 70%;
@@ -550,7 +580,7 @@ button {
     margin: 30px 0px;
     align-self: center;
   }
-
+    
   h2 {
     font-size: 24px;
     padding: 0px 40px;
@@ -601,6 +631,14 @@ button {
     margin: 40px 0px;
   }
 
+  #subscribe {
+    width: 80%;
+  }
+
+  #sign-up {
+    font-size: 12px;
+  }
+
   .mobile-footer {
     width: 100%;
     margin: 30px 0px;
@@ -628,11 +666,22 @@ button {
   padding: 0;
   margin: 0;
   font-size: 10px;
-  line-height: 1.0;
+  line-height: 1;
 }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1181px) {
+  .searchbar {
+    margin: 0 auto;
+    width: 80%;
+    height: 60%;
+  }
+
+  .searchbar input {
+    width: 100%;
+    height: 100%;
+  }
+
   .desktop-version {
     display: none;
   }
@@ -667,7 +716,10 @@ button {
     margin-bottom: 40px;
   }
 
-  .asidepic1-mob, .asidepic2-mob, .asidepic3-mob, .asidepic4-mob {
+  .asidepic1-mob,
+  .asidepic2-mob,
+  .asidepic3-mob,
+  .asidepic4-mob {
     height: 400px;
     object-fit: cover;
     width: 70%;
@@ -690,6 +742,17 @@ button {
     height: 400px;
     object-fit: cover;
     width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #cont-2-id-1,
+  #cont-2-id-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .sec2pics {
@@ -769,12 +832,9 @@ button {
   }
 
   .text-fot {
-  padding: 0px 20px;
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.0;
+    padding: 0px 20px;
+    margin: 0;
+    font-size: 12px;
+    line-height: 1;
+  }
 }
-}
-
-
-/*-------------------HAMBURGER----------------------------*/
