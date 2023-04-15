@@ -1,148 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact us at Game Hub for any questions, concerns, or feedback regarding our online game store. Our customer support team is available 24/7 to assist
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us at Game Hub for any questions, concerns, or feedback regarding our online game store. Our customer support team is available 24/7 to assist
      you with any issues you may encounter. Fill out our contact form or reach out to us through phone or email. We value your opinion and strive to provide the best possible service to our customers.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/b515e79b0f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
+
     <title>GAMEHUB | CONTACT</title>
- </head>
+  </head>
 
-<body>
+  <body>
+    <!------------------------------ header ------------------------------>
+    <header>
+      <div class="logo-container">
+        <a href="index.html"><img class="logo" src="images/logo img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it"></a>
+     </div>
+     
+     <div class="navigation">
+       <input type="checkbox" id="menu-checkbox">
+       <label for="menu-checkbox" class="hamburger-icon">
+         <i class="fas fa-bars"></i>
+       </label>
 
-<!------------------------------ header ------------------------------>
+       <nav class="nav1">
+           <a class="nav-link" href="index.html">Home</a>
+           <a class="nav-link" href="shop.html">Shop</a>
+           <a class="nav-link" href="tradein.html">Trade</a>
+           <a class="nav-link" href="contact.html" id="selected">Contact</a>
+           <a class="nav-link" href="about.html">About</a>
+           <a class="nav-link" href="#">Log In / Sign Up</a>
+           <a class="nav-link" href="#">View Cart</a>
+       </nav> 
+     </div>  
 
-<header>
-  <div class="logo-container">
-    <a href="index.html"><img class="logo" src="images/logo img/GameHub_Logo.png" alt="a guy sitting in front a desk taking phone calls"></a>
- </div>
- 
- <div class="navigation">
-   <input type="checkbox" id="menu-checkbox" />
-   <label for="menu-checkbox" class="hamburger-icon">
-     <i class="fas fa-bars"></i>
-   </label>
+ </header>  
 
-   <nav class="nav1">
-       <a class="nav-link" href="index.html">Home</a>
-       <a class="nav-link" href="shop.html">Shop</a>
-       <a class="nav-link" href="tradein.html">Trade</a>
-       <a class="nav-link" href="contact.html" id="selected">Contact</a>
-       <a class="nav-link" href="about.html">About</a>
-   </nav>
- </div>
-
- <div class="navigation-2">
-   <nav class="nav2"> 
-       <a class="nav-link" href="#">Log In / Sign Up</a>
-       <a class="nav-link" href="#">View Cart</a>
-   </nav> 
- </div>  
-</header>  
-
-<div class="searchcontainer">
-<div class="searchbar">  
-  <form>
-    <input type="text" placeholder="Search">
-  </form>
-</div>
-</div>
-  <!------------------------------------------------------ section ------------------------------------------------------>
-  <section class="contact-box">
-    <div class="faq">
-      <h1 class="faq-h1">FREQUENTLY ASKED QUESTIONS</h1>
-      <p class="explore">Explore our FAQs to quickly find answers to the most commonly asked questions. Don't see what you're looking for? Contact us for further assistance.</p>
+  <div class="searchcontainer">
+    <div class="searchbar">  
+      <form>
+        <input type="text" placeholder="Search">
+      </form>
     </div>
+  </div>
 
-    <div class="question-box">
-      <div class="q-box">
-        <h2 class="faq-h2">How do I purchase games on your platform?</h2>
-        <p class="faq-p">You can purchase games on our platform through the website by browsing the available games and selecting the one you want to purchase. Once you've made your selection,
-           you can proceed to checkout using one of the available payment options. We accept various payment methods including credit cards and online payment platforms.</p>
-      </div>
+    <!------------------------------------------------------ section ------------------------------------------------------>
+    <div id="contact-flex">
+      <section class="contact-box">
+        <div class="faq">
+          <h1 class="faq-h1">FREQUENTLY ASKED QUESTIONS</h1>
+          <p class="explore">
+            Explore our FAQs to quickly find answers to the most commonly asked
+            questions. Don't see what you're looking for? Contact us for further
+            assistance.
+          </p>
+        </div>
 
-      <div class="q-box">
-        <h2 class="faq-h2">Do you offer refunds for purchased games?</h2>
-        <p class="faq-p">Yes, we offer refunds for purchased games under certain conditions. If you experience technical issues with a game or are otherwise dissatisfied with your purchase,
-           you may be eligible for a refund. To request a refund, please contact our customer support team and provide information about your purchase and the issue you're experiencing.</p>
-      </div>
+        <div class="question-box">
+          <div class="q-box">
+            <h2 class="faq-h2">How do I purchase games on your platform?</h2>
+            <p class="faq-p">
+              You can purchase games on our platform through the website by
+              browsing the available games and selecting the one you want to
+              purchase. Once you've made your selection, you can proceed to
+              checkout using one of the available payment options. We accept
+              various payment methods including credit cards and online payment
+              platforms.
+            </p>
+          </div>
 
-      <div class="q-box">
-        <h2 class="faq-h2">How do I download and install the games?</h2>
-        <p class="faq-p">Once you've completed your purchase, you can download and install the games you purchased through your account on our platform. To do so, simply log in to your account 
-          and navigate to the 'My Games' section. From there, you can download and install the games you purchased by following the on-screen instructions.</p>
-      </div>
+          <div class="q-box">
+            <h2 class="faq-h2">Do you offer refunds for purchased games?</h2>
+            <p class="faq-p">
+              Yes, we offer refunds for purchased games under certain
+              conditions. If you experience technical issues with a game or are
+              otherwise dissatisfied with your purchase, you may be eligible for
+              a refund. To request a refund, please contact our customer support
+              team and provide information about your purchase and the issue
+              you're experiencing.
+            </p>
+          </div>
 
-      <div class="q-box">
-        <h2 class="faq-h2">Can I play the games on multiple devices?</h2>
-        <p class="faq-p">It depends on the game. Some games allow for multiple device play while others do not. This information is typically provided in the game's description before you make a purchase.
-           If you have any questions about a specific game's compatibility with multiple devices, please contact our customer support team.</p>
-      </div>
+          <div class="q-box">
+            <h2 class="faq-h2">How do I download and install the games?</h2>
+            <p class="faq-p">
+              Once you've completed your purchase, you can download and install
+              the games you purchased through your account on our platform. To
+              do so, simply log in to your account and navigate to the 'My
+              Games' section. From there, you can download and install the games
+              you purchased by following the on-screen instructions.
+            </p>
+          </div>
 
-      <div class="q-box">
-        <h2 class="faq-h2">What payment options are available?</h2>
-        <p class="faq-p">We accept a variety of payment options including major credit cards, online payment platforms, and other payment methods. The specific options available to you will depend on your 
-          location and other factors. During checkout, you can review the available payment options and choose the one that works best for you.</p>
-      </div>
-    </div>
-  </section>
-<!------------------------------------------------------ section ------------------------------------------------------>
-    <img  class="contact-img" src="/images/contact img/contact-page-pic.png" alt="">
-<!------------------------------------------------------ section ------------------------------------------------------>
-    <div class="contact-info">
-      <h1 class="faq-h1">CONTACT US</h1>
-      <p class="contact-info-p">Have a question or concern? Reach out to us anytime. We're always here to help and support you.</p>
+          <div class="q-box">
+            <h2 class="faq-h2">Can I play the games on multiple devices?</h2>
+            <p class="faq-p">
+              It depends on the game. Some games allow for multiple device play
+              while others do not. This information is typically provided in the
+              game's description before you make a purchase. If you have any
+              questions about a specific game's compatibility with multiple
+              devices, please contact our customer support team.
+            </p>
+          </div>
 
-      <div class="contact-info-icons">
-        <i class="fa-solid fa-phone" id="info-icon"><p>+47 98 45 67 86</p></i>
-        <i class="fa-solid fa-message" id="info-icon"><p>Chat</p></i>
-        <i class="fa-solid fa-at" id="info-icon"><p>gamehub@outlook.com</p></i>
-      </div>
+          <div class="q-box">
+            <h2 class="faq-h2">What payment options are available?</h2>
+            <p class="faq-p">
+              We accept a variety of payment options including major credit
+              cards, online payment platforms, and other payment methods. The
+              specific options available to you will depend on your location and
+              other factors. During checkout, you can review the available
+              payment options and choose the one that works best for you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div id="contact-content">
+        <div id="image-container">
+          <img
+            class="contact-img"
+            src="/images/contact img/contact-page-pic.png"
+            alt="A guy answering phone calls">
+        </div>
+        <div class="contact-info">
+          <h1 class="faq-h1">CONTACT US</h1>
+          <p class="contact-info-p">
+            Have a question or concern? Reach out to us anytime. We're always
+            here to help and support you.
+          </p>
 
-        <form id="contact">
-          <input id="details" type="text" placeholder="Name:">
-        </form>
+          <div class="contact-info-icons">
+            <i class="fa-solid fa-phone" id="info-icon"
+              ><p>+47 98 45 67 86</p></i
+            >
+            <i class="fa-solid fa-message" id="info-icon"><p>Chat</p></i>
+            <i class="fa-solid fa-at" id="info-icon"
+              ><p>gamehub@outlook.com</p></i
+            >
+          </div>
 
-        <form id="contact">
+          <form id="contact">
+            <input id="details" type="text" placeholder="Name:">
+          </form>
+
+          <form id="contact">
             <input id="details" type="text" placeholder="Email:">
-        </form>
+          </form>
 
-        <form id="contact-message" class="message-box">
-            <textarea placeholder="Your message...." id='textarea'></textarea>
-        </form>
+          <form id="contact-message" class="message-box">
+            <textarea placeholder="Your message...." id="textarea"></textarea>
+          </form>
 
-        <button type="submit" class="send-btn">SEND</button>
+          <button type="submit" class="send-btn">SEND</button>
+        </div>
+      </div>
     </div>
-    <!------------------------------------------------------ footer ------------------------------------------------------>
+<!-------------------------------- desktop footer--------------------------------->
     <footer class="desktop-footer">
       <div class="logo-fot">
         <img src="/images/logo img/GameHub_Logo.png" alt="page logo">
       </div>
       <div class="fottext-img">
-        <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website, including but not limited to text, graphics, logos,
-           images, and software, is the property of Game Hub and protected by international copyright laws. The reproduction, modification, distribution, 
-           or republication of the content without express written consent from Game Hub is strictly prohibited. Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
-        <p class="text-fot2"> Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      </div> 
+        <p class="text-fot">
+          Copyright © 2023 Game Hub. All rights reserved. The content on this
+          website, including but not limited to text, graphics, logos, images,
+          and software, is the property of Game Hub and protected by
+          international copyright laws. The reproduction, modification,
+          distribution, or republication of the content without express written
+          consent from Game Hub is strictly prohibited. Privacy Policy | Legal |
+          Game Hub Subscriber Agreement | Refunds | Cookies
+        </p>
+        <p class="text-fot2">
+          Game Hub | Our Careers | Contact US | Give us a feedback | Complains |
+          FQA | Pay with
+        </p>
+      </div>
     </footer>
+
     <!-------------------------------- footer-mobile--------------------------------->
+
     <footer class="mobile-footer">
       <div class="logo-fot">
         <img src="/images/logo img/GameHub_Logo.png" alt="page logo">
       </div>
       <div class="fottext-img">
-        <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website is the property of Game Hub and protected by international copyright laws.</p> 
-        <p class="text-fot">Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
-        <p class="text-fot">Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      </div> 
+        <p class="text-fot">
+          Copyright © 2023 Game Hub. All rights reserved. The content on this
+          website is the property of Game Hub and protected by international
+          copyright laws.
+        </p>
+        <p class="text-fot">
+          Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds |
+          Cookies
+        </p>
+        <p class="text-fot">
+          Game Hub | Our Careers | Contact US | Give us a feedback | Complains |
+          FQA | Pay with
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

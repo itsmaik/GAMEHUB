@@ -80,6 +80,7 @@
   grid-column-start: 2;
   margin-top: 10px;
   width: 185px;
+  cursor: pointer;
 }
 
 #card-detail-2 input,
@@ -101,4 +102,8 @@
   text-align: center;
   color: #FFFFFF;
   margin-top: 50px;
+}
+
+.a-btn {
+  text-decoration: none;
 }

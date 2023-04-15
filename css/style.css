@@ -178,10 +178,6 @@ p {
   background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
 }
 
-.cont1 {
-  display: block;
-}
-
 /*-----------------------------------divide lines start------------------------------------*/
 .head-line {
   position: relative;
@@ -281,6 +277,7 @@ button {
   letter-spacing: 0.4px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .secpic1,
@@ -337,6 +334,8 @@ button {
   align-items: center;
   padding: 10px;
   padding-left: 20px;
+  display: flow-root;
+  width: 40%;
 }
 
 /*--------------------------------------footer---------------------------*/
@@ -572,6 +571,8 @@ button {
   .section1 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .cont2 {
@@ -766,17 +767,22 @@ button {
   .secpic3,
   .secpic4 {
     height: 400px;
-    width: 70%;
+    width: 40%;
     margin: 50px 10px;
+    margin: 40px 0px 40px 4%;
   }
 
   .orange {
-    width: 25%;
+    width: 44%;
     font-size: 16px;
     font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #subscribe {
+    width: 60%;
   }
 
   .cont2 {
@@ -789,6 +795,11 @@ button {
     flex-direction: column;
   }
 
+  #sec1-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   #newsletter.cont2 {
     width: 90%;
