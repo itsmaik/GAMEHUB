@@ -18,6 +18,16 @@
   margin-top: 50px;
 }
 
+#add-to-card {
+ margin-bottom: 5%;
+ margin-right: 5%;
+ width: 23%;
+}
+
+.a-btn {
+  text-decoration: none;
+}
+
 #continue-btn:hover {
   background-color: white;
   transition: .5s;
