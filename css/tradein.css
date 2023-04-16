@@ -81,14 +81,10 @@
   }
 
   .img-standard-1 img,
-  .img-standard-2 img {
+  .img-standard-2 img,
+  .img-standard {
     height: 400px;
     margin: 5% 0%;
-  }
-
-  .img-standard {
-    height: 300px;
-    padding: 5% 0%;
   }
 
   .head-line::before,
