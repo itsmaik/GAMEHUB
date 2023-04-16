@@ -156,9 +156,8 @@ p {
 .asidepic2,
 .asidepic3,
 .asidepic4 {
-  width: 206px;
   height: 219px;
-  margin: 18px;
+  margin: 15%;
   border: 1px solid #FF5C00;
 }
 
@@ -848,4 +847,8 @@ button {
     font-size: 12px;
     line-height: 1;
   }
+}
+
+a {
+  display: contents;
 }
