@@ -134,7 +134,9 @@
   flex-wrap: wrap;
 }
 
-#info-icon {
+#info-icon,
+#info-icon1,
+#info-icon2 {
   color: white;
   font-size: 24px;
   text-align: center;
@@ -341,7 +343,9 @@
   flex-wrap: wrap;
 }
 
-#info-icon {
+#info-icon,
+#info-icon1,
+#info-icon2 {
   color: white;
   font-size: 24px;
   text-align: center;
