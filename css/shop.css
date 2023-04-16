@@ -79,47 +79,6 @@
 
 /*----------------------------------------- trade-in selection ---------------------------------------*/
 
-@media only screen and (min-width: 0px) and (max-width: 968px) {
-  .grid-standard-1 {
-    grid-template-columns: 100% !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr !important;
-    height: auto !important;
-    padding-top: 100px;
-    justify-items: center;
-    gap: 1%;
-  }
-  .grid-standard-2 {
-    grid-template-columns: 100% !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr !important;
-    height: auto !important;
-    padding-top: 100px;
-    justify-items: center;
-    gap: 1%;
-  }
-  .img-standard {
-    width: 80%;
-  }
-  #pic3 {
-    grid-column-start: 1 !important;
-  }
-  #pic2 {
-    grid-row-start: 1 !important;
-    grid-column-start: 1 !important;
-  }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 500px) {
-  .container-btn {
-    flex-direction: column-reverse;
-    height: 200px;
-    padding: 10% !important;
-    align-items: flex-start;
-  }
-  #sort-by {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
 #sort-by {
   display: flex;
   gap: 15px;
@@ -196,4 +155,55 @@
 .page-slc i {
   display: grid;
   align-items: center;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 968px) {
+  .grid-standard-1,
+  .grid-standard-2 {
+    grid-template-columns: 100% !important;
+    grid-template-rows: repeat(5, 400px) !important;
+    height: auto !important;
+    padding-top: 100px;
+    justify-items: center;
+    gap: 1%;
+  }
+  
+  .grid-scr {
+    gap: 10%;
+    margin: 10% 0%;
+  }
+
+  .grid-standard-2{
+    margin-bottom: 30%;
+  }
+
+  .img-standard {
+    width: 80%;
+  }
+  #pic3 {
+    grid-column-start: 1 !important;
+  }
+  #pic2 {
+    grid-row-start: 1 !important;
+    grid-column-start: 1 !important;
+  }
+  .img-standard-1 img,
+  .img-standard-2 img,
+  .img-standard {
+    height: 400px;
+    margin: 5% 0%;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  .container-btn {
+    flex-direction: column-reverse;
+    height: 200px;
+    padding: 10% !important;
+    align-items: flex-start;
+  }
+  #sort-by {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

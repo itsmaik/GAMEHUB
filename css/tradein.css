@@ -29,6 +29,12 @@
   font-size: 20px;
 }
 
+.sell-orange {
+  color: #ff6001;
+  display: contents;
+  font-weight: 700;
+}
+
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .trade-in-text {
     display: flex;
