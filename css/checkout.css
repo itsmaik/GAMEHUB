@@ -152,7 +152,7 @@ p {
   color: white;
   font-size: 24px;
   text-align: center;
-  margin: 10px 30px;
+  margin: 3%;
 }
 
 #info-icon p {
@@ -162,6 +162,7 @@ p {
 
 #selected-1 {
   border: 5px solid #001d2e;
+  margin-top: 5%;
 }
 
 /*------------------------------------MEDIA QUIERIES----------------------------------*/
