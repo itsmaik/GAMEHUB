@@ -18,15 +18,15 @@
 }
 
 .faq-h1 {
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #ff6001;
 }
 
 .explore {
-  font-size: 24px;
+  font-size: 1.3rem;
   font-weight: 300;
   line-height: 1.3;
 }
@@ -36,7 +36,7 @@
 }
 
 .faq-h2 {
-  font-size: 20px;
+  font-size: 1.1rem;
   font-weight: 600;
   color: #00121d;
   text-align: left;
@@ -142,7 +142,7 @@
 #info-icon1,
 #info-icon2 {
   color: white;
-  font-size: 24px;
+  font-size: 1.2rem;
   text-align: center;
   margin: 10px 30px;
 }
@@ -169,8 +169,14 @@
   height: 42px;
   padding-left: 20px;
   font-family: 'Poppins', sans-serif;
-  font-size: 18px;
+  font-size: 1rem;
   color: #000000;
+}
+
+.send-btn,
+#textarea {
+  font-family: 'Poppins', sans-serif;
+  border: none;
 }
 
 .send-btn {
@@ -179,11 +185,8 @@
   width: 120px;
   height: 40px;
   border-radius: 20px;
-  border: none;
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: 1px;
-  font-family: 'Poppins', sans-serif;
   cursor: pointer;
   justify-content: center;
   margin-top: 10px;
@@ -208,7 +211,4 @@
   border-radius: 4px;
   background-color: #f8f8f8;
   font-size: 18px;
-  resize: none;
-  font-family: 'Poppins', sans-serif;
-  border: none;
 }

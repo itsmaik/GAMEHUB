@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   background-color: #00121d;
+  font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -14,7 +16,10 @@ body {
   height: auto;
   margin: 0 auto;
   border: 12px solid #003250;
+  color: white;
+  font-family: 'Poppins', sans-serif;
 }
+
 /*----------------------------------------- header ---------------------------------------*/
 
 header {
@@ -52,7 +57,7 @@ header {
   color: white;
   display: inline-flex;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: .95rem;
   height: 90px;
   align-items: center;
   justify-content: center;
@@ -114,7 +119,7 @@ header {
 .searchbar input {
   font-weight: 500;
   font-family: 'Poppins';
-  font-size: 15px;
+  font-size: .95rem;
   border: none;
   width: 100%;
   padding: 6px 50px;
@@ -123,13 +128,9 @@ header {
 /*-------------------------------------- main --------------------------------------*/
 
 p {
-  font-family: 'Poppins', sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-  font-style: normal;
   font-weight: 300;
-  font-size: 18px;
-  line-height: 175.5%;
+  font-size: 1rem;
   text-align: center;
-  color: #ffffff;
 }
 
 /*-----------------------------------divide lines start------------------------------------*/
@@ -137,13 +138,8 @@ p {
   position: relative;
   margin: 25px auto;
   text-align: center;
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.075em;
-  color: #ffffff;
+  font-size: 1.3rem;
 }
 
 .head-line::before {
@@ -176,17 +172,12 @@ p {
 }
 /*--------------------------------------divide lines finish---------------------------*/
 
-
 h2 {
   margin-top: 80px;
   padding: 40px 60px;
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2rem;
   text-align: center;
-  color: #ffffff;
 }
 
 button {
@@ -195,15 +186,12 @@ button {
   background-color: #ff5c00;
   width: 150px;
   height: 40px;
-  font-family: 'Montserrat';
-  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 16px;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.4px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -233,11 +221,8 @@ button {
 
 .text-fot,
 .text-fot2 {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #ffffff;
   text-align: left;
   padding-left: 40px;
 }
@@ -254,10 +239,7 @@ button {
   position: absolute;
 }
 
-.mobile-version {
-  display: none;
-}
-
+.mobile-version,
 .mobile-footer {
   display: none;
 }
@@ -275,11 +257,13 @@ button {
 .heropic img {
   width: 100%;
 }
+
 .asidepics {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+
 /*----------------------------------------media queries-------------------------------------*/
 @media only screen and (max-width: 1300px) {
   header {
@@ -409,16 +393,13 @@ button {
     margin-bottom: 50px;
   }
 
-  .asidepics-mob {
+  .asidepics-mobile {
     display: flex;
     overflow: auto;
     margin-bottom: 40px;
   }
 
-  .asidepic1-mob,
-  .asidepic2-mob,
-  .asidepic3-mob,
-  .asidepic4-mob {
+  .asidepic-mob {
     height: 200px;
     object-fit: cover;
     width: 70%;
@@ -495,10 +476,7 @@ button {
     margin: 0;
   }
 
-  .secpic1,
-  .secpic2,
-  .secpic3,
-  .secpic4 {
+  .secpic {
     height: 200px;
     width: 70%;
     margin: 30px 0px;
@@ -588,16 +566,13 @@ button {
     font-size: 18px;
   }
 
-  .asidepics-mob {
+  .asidepics-mobile {
     display: flex;
     overflow: auto;
     margin-bottom: 40px;
   }
 
-  .asidepic1-mob,
-  .asidepic2-mob,
-  .asidepic3-mob,
-  .asidepic4-mob {
+  .asidepics-mob {
     height: 400px;
     object-fit: cover;
     width: 70%;
@@ -639,10 +614,7 @@ button {
     margin: 0;
   }
 
-  .secpic1,
-  .secpic2,
-  .secpic3,
-  .secpic4 {
+  .secpic {
     height: 400px;
     width: 40%;
     margin: 50px 10px;

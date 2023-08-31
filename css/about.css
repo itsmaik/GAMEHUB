@@ -31,36 +31,30 @@ section {
   padding: 2% 5%;
 }
 
-h1 {
+h1,
+.h2-about {
   font-family: 'Montserrat', sans-serif, Verdana;
-  font-style: normal;
   font-weight: 600;
+}
+
+h1 {
   font-size: 32px;
   color: #FF6001;
   line-height: 0.5;
 }
 
 .h2-about {
-  font-family: 'Montserrat', sans-serif, Verdana;
-  font-style: normal;
-  font-weight: 600;
   font-size: 24px;
-  color: white;
-  line-height: 0.5;
   margin: auto;
   padding: 0;
   text-align: left;
 }
 
 .p-about {
-  font-family: 'Poppins';
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   display: flex;
   align-items: center;
-  letter-spacing: 0.4px;
-  color: white;
   line-height: 1.5;
   margin-top: 40px;
   text-align: left;
