@@ -47,6 +47,7 @@
       </nav>
     </div>
   </header>
+
   <div class="searchcontainer">
     <div class="searchbar">
       <form>
@@ -55,20 +56,44 @@
     </div>
   </div>
 <!------------------------------First box------------------------------>   
-  <div class="divider"></div>
-  <h1 class="head-line">CHECK OUT</h1>
-  <a id="continue-btn" href="shop.html">Continue Shopping</a>
+<div class="divider"></div>
+<h1 class="head-line">CHECK OUT</h1>
+<a id="continue-btn" href="shop.html">Continue Shopping</a>
 
-  <div class="first-box">
-    <div class="line-1">
-      <h1 class="h-shop">PRODUCT</h1> <h1 class="h-shop">NAME</h1> <h1 class="h-shop">QUANTATY</h1> <h1 class="h-shop">PRICE</h1>
+  <section class="shoppingcart">
+    <div class="container">
+      <h1 class="h-shop">PRODUCT</h1>
     </div>
 
-    <div class="line-2"><img id="shop-pic" src="/images/description-img/elf-front-pic.png" alt=""> 
-      <h1 class="h-shop">MR. SNIPER</h1> <P class="p-shop">1</P> <P class="p-shop">$39,99</P>
+    <div class="container">
+      <h1 class="h-shop">NAME</h1>
     </div>
 
-    <div class="line-3">
+    <div class="container">
+      <h1 class="h-shop">GENRE</h1>
+    </div>
+
+    <div class="container">
+      <h1 class="h-shop">PRICE</h1>
+    </div>
+
+    <div class="prod-container">
+      <img id="shop-pic" src="/images/description-img/elf-front-pic.png" alt="">
+    </div>
+
+    <div class="prod-container">
+      <h1 class="h-shop">MR. SNIPER</h1>
+    </div>
+
+    <div class="prod-container">
+      <p class="p-shop">Adventure</p>
+    </div>
+
+    <div class="prod-container">
+      <P class="p-shop">$39,99</P>
+    </div>
+
+    <div class="giftcards">
       <form id="card-detail-1">
         <input type="text" placeholder="Use a gift card" aria-label="card-detail-1">
       </form>
@@ -78,14 +103,23 @@
       </form>
     </div>
 
-    <div class="line-4">
-      <p class="p-shop">subtotal: $39,99</p>
-      <p class="p-shop">shipping: $4,00</p>
-      <h1 class="h-shop" id="h-line-4">TOTAL PRICE: $43,99</h1>
+    <div class="container" id="pricing-titles">
+      <p>SUBTOTAL:</p>
+      <p>SHIPPING:</p>
+      <p><span class="bold">TOTAL PRICE:</span></p>
+    </div>
+
+    <div class="container" id="pricing">
+      <p>$39,99</p>
+      <p>$4,00</p>
+      <p><span class="bold">$43,99<span></p>
+    </div>
+
+    <div class="payment">
       <a id="go-to-payment" href="payment.html">GO TO PAYMENT</a>
     </div>
-  </div>
- 
+  </section>
+
   <!------------------------------footer------------------------------>  
   <footer class="desktop-footer">
     <div class="logo-fot">

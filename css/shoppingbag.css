@@ -1,20 +1,33 @@
-.first-box,
-.second-box {
-  width: 1090px;
-  height: 420px;
-  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
-  border-radius: 0px;
-  margin-bottom: 50px;
-  margin-left: 250px;
-  display: grid;
+p {
+  margin: 0;
 }
 
-.first-box {
-  grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: 15% 25% 20% 25% 15%;
-  margin: auto;
-  margin-bottom: 20%;
+.shoppingcart {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 80px auto;
+  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  border-radius: 25px;
+  padding: 4%;
+  margin: 0% 12% 7%;
+}
 
+.prod-container,
+.container {
+  height: 180px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.prod-container {
+  align-items: center;
+}
+
+#shop-pic {
+  width: 75%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #continue-btn,
@@ -35,60 +48,63 @@
   margin-left: 12%;
 }
 
-#go-to-payment {
-  margin-top: 10%;
-  margin-left: 25%;
+#continue-btn {
+  margin: 1% 12% 2.5%;
 }
 
-#shop-pic {
-  width: 140px;
-  height: 160px;
-  box-shadow: 0px 4px 4px 3px rgba(0, 29, 46, 0.4);
-  object-fit: cover;
-  margin-left: 120px;
-}
-
-.line-1,
-.line-2 {
-  display: contents;
-}
-.line-4 {
-  grid-column-start: 4;
-  grid-row-start: 3;
-  margin-top: 25px;
+.h-shop,
+.p-shop {
+  font-size: .9rem;
 }
 
 .h-shop {
-  margin-left: 50px;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: .9rem;
-  text-align: center;
-  display: grid;
 }
-
 
 .p-shop {
   font-weight: 400;
-  font-size: .9rem;
-  margin-left: 50px;
 }
 
-#card-detail-2 input,
-#card-detail-1 input {
-  height: 40px;
-  width: 300px;
-  position: relative;
-  left: 88px;
-  display: inline-block;
-  margin: 10px 30px;
-
+.giftcards {
+  grid-column: 1/3;
+  margin-left: 6%;
+  padding: 8% 0%;
 }
 
-#card-detail-1 input {
-  margin-top: 30%;
+#card-detail-1 input,
+#card-detail-2 input {
+  width: 70%;
+  height: 45px;
+  padding-left: 5%;
+  margin: 2% 0%;
 }
 
-#h-line-4 {
-  padding-top: 30px;
+input::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+#pricing-titles,
+#pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 32%;
+}
+
+#pricing-titles {
+  grid-column: 3/4;
+}
+
+#pricing {
+  grid-column: 4/5;
+  padding-left: 37%;
+}
+
+.payment {
+  grid-column: 4/5;
+}
+
+.bold {
+  font-weight: 500;
 }
