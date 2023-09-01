@@ -144,25 +144,30 @@ p {
 
 .contact-info-icons {
   display: flex;
-  justify-content: space-between;
   padding-top: 20px;
 }
 
 #info-icon {
-  color: white;
   font-size: 24px;
   text-align: center;
-  margin: 3%;
 }
 
 #info-icon p {
   width: 100%;
   text-align: center;
+  margin: 1rem;
 }
 
 #selected-1 {
   border: 5px solid #001d2e;
   margin-top: 5%;
+}
+
+#sub-box-3{
+  background-color: #326b8b;
+  margin-top: 15%;
+  margin-bottom: 5%;
+  border-radius: 10px;
 }
 
 /*------------------------------------MEDIA QUIERIES----------------------------------*/
@@ -185,9 +190,9 @@ p {
     margin: 5%;
   }
 
-  .sub-box-1,
-  .sub-box-2,
-  .sub-box-3 {
+  .sub-box,
+  .sub-box,
+  .sub-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -277,9 +282,9 @@ p {
     margin: 5%;
   }
 
-  .sub-box-1,
-  .sub-box-2,
-  .sub-box-3 {
+  .sub-box,
+  .sub-box,
+  .sub-box {
     display: flex;
     flex-direction: column;
     justify-content: center;

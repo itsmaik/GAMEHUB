@@ -1,3 +1,4 @@
+/*
 .main-grid {
   height: auto;
   display: grid;
@@ -5,7 +6,13 @@
   grid-template-rows: 1fr 1fr 0.5fr;
   padding: 0 5%;
 }
+*/
 
+.main-grid {
+  width: 60%;
+  margin: 0 auto;
+}
+/*
 @media only screen and (min-width: 0px) and (max-width: 1080px) {
   .main-grid {
     display: flex;
@@ -52,6 +59,7 @@
     width: 100% !important;
   }
 }
+*/
 
 .grid-box-3 img {
   height: 100%;
@@ -74,15 +82,12 @@
   filter: drop-shadow(3px 4px 4px #003250);
   border: 1px solid #ff6001;
   object-fit: cover;
-  width: 100%;
-}
-
-.box1-pic1 {
-  height: 80%;
+  width: 80%;
+  height: fit-content;
 }
 
 .box2-pic1 {
-  height: 440px;
+  width: 30%;
 }
 
 .grid-box-1 {
