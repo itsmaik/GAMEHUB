@@ -16,8 +16,8 @@
       <link
         href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
-      <link rel="stylesheet" href="/css/style.css" />
-      <link rel="stylesheet" href="/css/description.css" />
+      <link rel="stylesheet" href="/GAMEHUB/css/style.css" />
+      <link rel="stylesheet" href="/GAMEHUB/css/description.css" />
   
       <!-- ======================= SCRIPTS -->
       <script
@@ -33,32 +33,32 @@
   <body>
     <!------------------------------ header ------------------------------>
     <header>
-      <div class="logo-container">
-        <a href="index.html"
+      <div class="header__logo">
+        <a href="/GAMEHUB/index.html"
           ><img
             class="logo"
-            src="images/logo-img/GameHub_Logo.png"
+            src="/GAMEHUB/images/logo-img/GameHub_Logo.png"
             alt="A gaming controller with the logo text and slogan written underneath it"></a>
       </div>
     
-      <div class="navigation">
+      <div class="header__navbar_container">
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="hamburger-icon">
           <i class="fas fa-bars"></i>
         </label>
     
-        <nav class="nav1">
-          <a class="nav-link" href="index.html">Home</a>
-          <a class="nav-link" href="shop.html" id="selected">Shop</a>
-          <a class="nav-link" href="tradein.html">Trade</a>
-          <a class="nav-link" href="contact.html">Contact</a>
-          <a class="nav-link" href="about.html">About</a>
+        <nav class="header__navbar">
+          <a class="header__navbar_link" href="/GAMEHUB/index.html">Home</a>
+          <a class="header__navbar_link" href="/GAMEHUB/pages/shop.html" id="selected">Shop</a>
+          <a class="header__navbar_link" href="/GAMEHUB/pages/tradein.html">Trade</a>
+          <a class="header__navbar_link" href="/GAMEHUB/pages/contact.html">Contact</a>
+          <a class="header__navbar_link" href="/GAMEHUB/pages/about.html">About</a>
         </nav>
       </div>
-      <div class="navigation2">
-        <nav class="nav2">
-          <a class="nav-link" href="#">Log In / Sign Up</a>
-          <a class="nav-link" href="shoppingbag.html">View Cart</a>
+      <div class="header__navigator_container">
+        <nav class="header__navigator">
+          <a class="header__navigator_link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator_link" href="/GAMEHUB/pages/shoppingbag.html">View Cart</a>
         </nav>
       </div>
     </header>
@@ -70,54 +70,12 @@
       </div>
     </div>
     <!------------------------------main------------------------------>
-    <div class="main-grid">
-      <div class="grid-box-1">
-        <div>
-          <img
-            class="box1-pic1"
-            src="/images/description-img/elf-front-pic.png"
-            alt="">
-        </div>
-
-        <div class="game-desc-1">
-          <h1 class="h1-desc">THE ELF HERO</h1>
-          <p>$ 39,99</p>
-          <form id="card-detail-1" action="">
-            <input type="number">
-          </form>
-          <form id="card-detail-2" action="">
-            <input type="number">
-          </form>
-          <a href="shoppingbag.html"><button class="orange" id="add-to-card">ADD TO CARD</button></a>
-        </div>
-      </div>
-      <!--
-      <div class="grid-box-3">
-        <img src="/images/description-img/aside-pic1.png" alt="An elf fighting a warrior in front of a castle">
-        <img src="/images/description-img/aside-pic2.png" alt="A warrior in front a castle">
-        <img src="/images/description-img/aside-pic3.png" alt="An elf fighting a warrior in the forest">
-        <img src="/images/description-img/aside-pic4.png" alt="An elf fighting a dragon in the forest">
-      </div>
-       -->
-      <div class="grid-box-2">
-        <img
-          class="box2-pic1"
-          src="/images/description-img/aside-pic2.png"
-          alt="A warrior in front a castle">
-        <div class="game-desc-2">
-          <p class="p-game-desc-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ipsum dignissimos
-             voluptatem sed doloremque dolore, placeat assumenda impedit molestiae autem
-              quibusdam sint porro.Accusantium hic provident ea, maiores consequuntur saepe?
-          </p>
-          <button class="orange" id="add-to-card">READ MORE</button>
-        </div>
-      </div>
-    </div>
+    <div class="main-grid" id="section__game_details"></div>
+      
     <!------------------------------footer------------------------------>
     <footer class="desktop-footer">
       <div class="logo-fot">
-        <img src="/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
+        <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
       </div>
       <div class="fottext-img">
         <p class="text-fot">
@@ -140,7 +98,7 @@
 
     <footer class="mobile-footer">
       <div class="logo-fot">
-        <img src="/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
+        <img src="/GAMEHUB/images/logo-img/" alt="A gaming controller with the logo text and slogan written underneath it">
       </div>
       <div class="fottext-img">
         <p class="text-fot">
