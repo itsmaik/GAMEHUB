@@ -18,11 +18,11 @@
 }
 
 .faq-h1 {
-  font-size: 1.3rem;
   font-weight: 600;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #ff6001;
+  margin-bottom: 2%;
 }
 
 .explore {
