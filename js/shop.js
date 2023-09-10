@@ -1,20 +1,28 @@
 import fetchGameData from "./utils/fetchGameData.js";
 import getShopSections from "./getSections/getShopSections.js";
 
-// import showSlides from "./showSlides.js";
-// import buyNowBtn from "./cart/buyNowBtn.js";
-// import errorBox from "./errorBox.js";
+import {
+  hideSliderLoading,
+  displaySliderError,
+  hideSliderError,
+} from "./utils/feedbacks.js";
 
-const gamesData = await fetchGameData();
+const gamesDataPromise = fetchGameData();
 
-if (gamesData.errors) {
-  //   const container1 = document.querySelector(".slideshow-container");
-  //   const [container2, container3] = document.querySelectorAll(".shop-grid");
-  //   const displayError = [container1, container2, container3];
-  //   displayError.forEach((error) => (error.innerHTML += errorBox(gamesData)));
-} else {
-  // const slides = document.getElementsByClassName("slideshow-container")[0].getElementsByClassName("img");
-  // showSlides(slides);
-  getShopSections(gamesData);
-  // buyNowBtn()
-}
+gamesDataPromise
+  .then((gamesData) => {
+    hideSliderLoading();
+
+    if (gamesData.errors) {
+      displaySliderError("An error occurred while loading the data.");
+    } else {
+      hideSliderError();
+
+      getShopSections(gamesData);
+    }
+  })
+  .catch((error) => {
+    hideSliderLoading();
+
+    displaySliderError("An error occurred while loading the data.");
+  });

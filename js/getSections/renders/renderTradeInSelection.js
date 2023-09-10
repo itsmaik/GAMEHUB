@@ -1,4 +1,4 @@
-export default function displayTradeInSelection(gamesData) {
+export default function renderTradeInSelection(gamesData) {
   const containerMainLeft = `
     <div class="grid-standard-1">
       <div class="img-standard-1">

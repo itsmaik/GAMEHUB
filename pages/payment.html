@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <head>
     <!-- ======================= METAS -->
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,56 +10,99 @@
      We accept various payment methods to ensure a seamless checkout experience. Enter your payment information and complete your purchase in just a few clicks.">
     
     <!-- ======================= LINKS -->
+
      <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/GAMEHUB/css/payment.css">
-    <link rel="stylesheet" href="/GAMEHUB/css/style.css">
+    <link rel="stylesheet" href="/css/payment.css">
+    <link rel="stylesheet" href="/css/style.css">
     
     <!-- ======================= SCRIPTS -->
+
     <script src="https://kit.fontawesome.com/b515e79b0f.js" crossorigin="anonymous"></script>
+    <script defer type="module" src="/js/miniCart.js"></script>
+    <script defer type="module" src="/js/menuMobile.js"></script>
 
     <title>PAYMENT</title>
  </head>
- <!------------------------------ header ------------------------------>
-  <header>
+ 
+ <body>
+   <!-- =========================== START HEADER =========================== -->
+
+ <header>
+  <div class="header__main">
     <div class="header__logo">
-      <a href="/GAMEHUB/index.html"
+      <a href="/index.html"
         ><img
           class="logo"
-          src="/GAMEHUB/images/logo-img/GameHub_Logo.png"
-          alt="A gaming controller with the logo text and slogan written underneath it"></a>
+          src="/images/logo-img/GameHub_Logo.png"
+          alt="A gaming controller with the logo text and slogan written underneath it"
+      /></a>
     </div>
-
-    <div class="header__navbar_container">
-      <input type="checkbox" id="menu-checkbox">
-      <label for="menu-checkbox" class="hamburger-icon">
-        <i class="fas fa-bars"></i>
-      </label>
-
-      <nav class="header__navbar">
-        <a class="header__navbar_link" href="/GAMEHUB/index.html">Home</a>
-        <a class="header__navbar_link" href="/GAMEHUB/pages/shop.html" id="selected">Shop</a>
-        <a class="header__navbar_link" href="/GAMEHUB/pages/tradein.html">Trade</a>
-        <a class="header__navbar_link" href="/GAMEHUB/pages/contact.html">Contact</a>
-        <a class="header__navbar_link" href="/GAMEHUB/pages/about.html">About</a>
-      </nav>
-    </div>
-    <div class="header__navigator_container">
-      <nav class="header__navigator">
-        <a class="header__navigator_link" href="#">Log In / Sign Up</a>
-        <a class="header__navigator_link" href="/GAMEHUB/pages/shoppingbag.html">View Cart</a>
-      </nav>
-    </div>
-  </header>
-  <div class="searchcontainer">
-    <div class="searchbar">
-      <form>
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search" aria-label="searchbar" />
-      </form>
-    </div>
+  
+    <!-- ------------------ Navigations Desktop ------------------ -->
+  
+    <nav class="header__navbar">
+      <a class="header__navbar--link" href="/index.html">Home</a>
+      <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+      <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+      <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+      <a class="header__navbar--link" href="/pages/about.html">About</a>
+    </nav>
+  
+    <nav class="header__navigator">
+      <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+      <a class="header__navigator--link" href="/pages/shoppingbag.html">
+        View Cart
+        <span class="cart__count_indicator"></span>
+      </a>
+    </nav>
+  
+    <!-- ------------------ Navigations Mobile ------------------ -->
+  
+    <nav class="header__navigator--mobile outside">
+      <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+      <a class="header__navigator--link" href="/pages/shoppingbag.html">
+        View Cart
+        <span class="cart__count_indicator"></span>
+      </a>
+    </nav>
+  
+    <div class="menu_mobile"></div>
   </div>
+  
+  
+
+  <div class="header__navigation_mobile">
+    <nav class="header__navbar--mobile">
+      <a class="header__navbar--link" href="/index.html">Home</a>
+      <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+      <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+      <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+      <a class="header__navbar--link" href="/pages/about.html">About</a>
+    </nav>
+
+    <nav class="header__navigator--mobile inside">
+      <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+      <a class="header__navigator--link" href="/pages/shoppingbag.html">
+        View Cart
+        <span class="cart__count_indicator"></span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<div class="searchcontainer">
+  <div class="searchbar">
+    <form>
+      <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search" aria-label="searchbar" />
+    </form>
+  </div>
+</div>
+
+<!-- =========================== END HEADER =========================== -->
+
  <!------------------------------ first box ------------------------------>
  <div class="divider"></div>
  <h1 class="head-line">PAYMENT</h1>

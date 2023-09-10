@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <!-- ======================= METAS -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,67 +10,110 @@
       name="description"
       content="Explore and buy the latest computer games at Game Hub - your one-stop shop for the best gaming experience. 
       Browse our collection of games and choose from a variety of categories such as action, adventure, sports, and more. With Game Hub, you can find
-      the latest releases and the best deals. Join the gaming community today.">
+      the latest releases and the best deals. Join the gaming community today."
+    />
 
     <!-- ======================= LINKS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="/GAMEHUB/css/style.css" />
-    <link rel="stylesheet" href="/GAMEHUB/css/shop.css" />
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/shop.css" />
+    <link rel="stylesheet" href="/css/style.css" />
 
     <!-- ======================= SCRIPTS -->
+
     <script
       src="https://kit.fontawesome.com/b515e79b0f.js"
       crossorigin="anonymous"
     ></script>
     <script defer type="module" src="/js/shop.js"></script>
+    <script defer type="module" src="/js/miniCart.js"></script>
+    <script defer type="module" src="/js/menuMobile.js"></script>
 
     <title>GAMEHUB | SHOP</title>
   </head>
 
   <body>
-    <!------------------------------ header ------------------------------>
+    <!-- =========================== START HEADER =========================== -->
 
     <header>
-      <div class="logo-container">
-        <a href="/GAMEHUB/index.html"
-          ><img
-            class="logo"
-            src="images/logo-img/GameHub_Logo.png"
-            alt="A gaming controller with the logo text and slogan written underneath it"></a>
-      </div>
-  
-      <div class="navigation">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="hamburger-icon">
-          <i class="fas fa-bars"></i>
-        </label>
-  
-        <nav class="nav1">
-          <a class="nav-link" href="/GAMEHUB/index.html">Home</a>
-          <a class="nav-link" href="/GAMEHUB/pages/shop.html" id="selected">Shop</a>
-          <a class="nav-link" href="/GAMEHUB/pages/tradein.html">Trade</a>
-          <a class="nav-link" href="/GAMEHUB/pages/contact.html">Contact</a>
-          <a class="nav-link" href="/GAMEHUB/pages/about.html">About</a>
+      <div class="header__main">
+        <div class="header__logo">
+          <a href="/index.html"
+            ><img
+              class="logo"
+              src="/images/logo-img/GameHub_Logo.png"
+              alt="A gaming controller with the logo text and slogan written underneath it"
+          /></a>
+        </div>
+
+        <!-- ------------------ Navigations Desktop ------------------ -->
+
+        <nav class="header__navbar">
+          <a class="header__navbar--link" href="/index.html">Home</a>
+          <a class="header__navbar--link" href="/pages/shop.html" id="selected"
+            >Shop</a
+          >
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
         </nav>
+
+        <nav class="header__navigator">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
+
+        <!-- ------------------ Navigations Mobile ------------------ -->
+
+        <nav class="header__navigator--mobile outside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
+
+        <div class="menu_mobile"></div>
       </div>
-      <div class="navigation2">
-        <nav class="nav2">
-          <a class="nav-link" href="#">Log In / Sign Up</a>
-          <a class="nav-link" href="/GAMEHUB/pages/shoppingbag.html">View Cart</a>
+
+      <div class="header__navigation_mobile">
+        <nav class="header__navbar--mobile">
+          <a class="header__navbar--link" href="/index.html">Home</a>
+          <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
+        </nav>
+
+        <nav class="header__navigator--mobile inside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
         </nav>
       </div>
     </header>
+
     <div class="searchcontainer">
       <div class="searchbar">
         <form>
+          <i class="fas fa-search"></i>
           <input type="text" placeholder="Search" aria-label="searchbar" />
         </form>
       </div>
     </div>
+
+    <!-- =========================== END HEADER =========================== -->
+
     <!----------------------------------------------- main --------------------------------------------->
 
     <main class="main-shop">
@@ -87,51 +131,9 @@
       </div>
 
       <div class="grid-scr">
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-assassin.jpg"
-            alt="an animation of an assassin shadow"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-space-war.jpg"
-            alt="an animated image of the universe"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-furious.jpg"
-            alt=" an image of a beast"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-cyberpunk.jpg"
-            alt="A woman holding a sward"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-forcing-legend.jpg"
-            alt="a thoughtfull girl"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-racing.jpg"
-            alt="a colerfull race car"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-pingpong.jpg"
-            alt="a ping pong table "></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-boxer.jpg"
-            alt="a guy fighting box"></a>
-        <a href="/GAMEHUB/pages/description.html"
-          ><img
-            class="img-scr"
-            src="/GAMEHUB/images/shop-img/scrolling-boxer.jpg"
-            alt="a girl holding a sward"></a>
+        <div id="section__top_sellers"></div>
+        <div class="slider_loading active"></div>
+        <div class="slider_error inactive"></div>
       </div>
 
       <div class="cont1">
@@ -139,41 +141,7 @@
         <h1 class="head-line">TRADE IN SELECTION</h1>
       </div>
 
-      <div class="grid-standard-1">
-        <div class="img-standard-1">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-big1.png" alt="a hunter holding a gun"></a>
-        </div>
-        <div class="img-standard">
-          <a href="description.html"><img src="/images/shop-img/standard-1.png" alt="a guy playing american football"></a>
-        </div>
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-2.png" alt="a zombie in front of a game machine"></a>
-        </div>
-        <div class="img-standard" id="pic3">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-3.png" alt="a sodier holding a gun"></a>
-        </div>
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-4.png" alt="a dragon spiting fire"></a>
-        </div>
-      </div>
-
-      <div class="grid-standard-2">
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-1.png" alt="a guy playing american football"></a>
-        </div>
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-2.png" alt="a zombie in front of a game machine"></a>
-        </div>
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-3.png" alt="a sodier holding a gun"></a>
-        </div>
-        <div class="img-standard">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-4.png" alt="a dragon spiting fire"></a>
-        </div>
-        <div class="img-standard-2" id="pic2">
-          <a href="/GAMEHUB/pages/description.html"><img src="/GAMEHUB/images/shop-img/standard-big2.png" alt="a guy in a football stadium starring at a ball"></a>
-        </div>
-      </div>
+      <div id="section__trade_in_selection"></div>
 
       <div class="cont1">
         <div class="divider" id="divider-shop2"></div>
@@ -193,7 +161,7 @@
 
     <footer class="desktop-footer">
       <div class="logo-fot">
-        <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="page logo">
+        <img src="/images/logo-img/GameHub_Logo.png" alt="page logo" />
       </div>
       <div class="fottext-img">
         <p class="text-fot">
@@ -216,7 +184,7 @@
 
     <footer class="mobile-footer">
       <div class="logo-fot">
-        <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="page logo">
+        <img src="/images/logo-img/GameHub_Logo.png" alt="page logo" />
       </div>
       <div class="fottext-img">
         <p class="text-fot">

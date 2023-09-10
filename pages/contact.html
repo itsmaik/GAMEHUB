@@ -2,64 +2,109 @@
 <html lang="en">
   <head>
     <!-- ======================= METAS -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Contact us at Game Hub for any questions, concerns, or feedback regarding our online game store. Our customer support team is available 24/7 to assist
-     you with any issues you may encounter. Fill out our contact form or reach out to us through phone or email. We value your opinion and strive to provide the best possible service to our customers.">
+     you with any issues you may encounter. Fill out our contact form or reach out to us through phone or email. We value your opinion and strive to provide the best possible service to our customers."
+    />
 
     <!-- ======================= LINKS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="/GAMEHUB/css/style.css" />
-    <link rel="stylesheet" href="/GAMEHUB/css/contact.css" />
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/contact.css" />
 
     <!-- ======================= SCRIPTS -->
+
     <script
       src="https://kit.fontawesome.com/b515e79b0f.js"
       crossorigin="anonymous"
     ></script>
-    
+    <script defer type="module" src="/js/miniCart.js"></script>
+    <script defer type="module" src="/js/menuMobile.js"></script>
+
     <title>GAMEHUB | CONTACT</title>
   </head>
 
   <body>
-    <!------------------------------ header ------------------------------>
+    <!-- =========================== START HEADER =========================== -->
+
     <header>
-      <div class="header__logo">
-        <a href="/GAMEHUB/index.html"
-          ><img
-            class="logo"
-            src="/GAMEHUB/images/logo-img/GameHub_Logo.png"
-            alt="A gaming controller with the logo text and slogan written underneath it"></a>
-      </div>
-    
-      <div class="header__navbar_container">
-        <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="hamburger-icon">
-          <i class="fas fa-bars"></i>
-        </label>
-    
+      <div class="header__main">
+        <div class="header__logo">
+          <a href="/index.html"
+            ><img
+              class="logo"
+              src="/images/logo-img/GameHub_Logo.png"
+              alt="A gaming controller with the logo text and slogan written underneath it"
+          /></a>
+        </div>
+
+        <!-- ------------------ Navigations Desktop ------------------ -->
+
         <nav class="header__navbar">
-          <a class="header__navbar_link" href="/GAMEHUB/index.html">Home</a>
-          <a class="header__navbar_link" href="/GAMEHUB/pages/shop.html">Shop</a>
-          <a class="header__navbar_link" href="/GAMEHUB/pages/tradein.html">Trade</a>
-          <a class="header__navbar_link" href="/GAMEHUB/pages/contact.html" id="selected">Contact</a>
-          <a class="header__navbar_link" href="/GAMEHUB/pages/about.html">About</a>
+          <a class="header__navbar--link" href="/index.html">Home</a>
+          <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a
+            class="header__navbar--link"
+            href="/pages/contact.html"
+            id="selected"
+            >Contact</a
+          >
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
         </nav>
-      </div>
-      <div class="header__navigator_container">
+
         <nav class="header__navigator">
-          <a class="header__navigator_link" href="#">Log In / Sign Up</a>
-          <a class="header__navigator_link" href="/GAMEHUB/pages/shoppingbag.html">View Cart</a>
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
+
+        <!-- ------------------ Navigations Mobile ------------------ -->
+
+        <nav class="header__navigator--mobile outside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
+
+        <div class="menu_mobile"></div>
+      </div>
+
+      <div class="header__navigation_mobile">
+        <nav class="header__navbar--mobile">
+          <a class="header__navbar--link" href="/index.html">Home</a>
+          <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
+        </nav>
+
+        <nav class="header__navigator--mobile inside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
         </nav>
       </div>
     </header>
+
     <div class="searchcontainer">
       <div class="searchbar">
         <form>
@@ -68,6 +113,9 @@
         </form>
       </div>
     </div>
+
+    <!-- =========================== END HEADER =========================== -->
+
     <!------------------------------------------------------ section ------------------------------------------------------>
     <div id="contact-flex">
       <section class="contact-box">
@@ -143,8 +191,9 @@
         <div id="image-container">
           <img
             class="contact-img"
-            src="/GAMEHUB/images/contact-img/contact-page-pic.png"
-            alt="A guy answering phone calls">
+            src="/images/contact-img/contact-page-pic.png"
+            alt="A guy answering phone calls"
+          />
         </div>
         <div class="contact-info">
           <h1 class="faq-h1">CONTACT US</h1>
@@ -155,20 +204,22 @@
 
           <div class="contact-info-icons">
             <i class="fa-solid fa-phone" id="info-icon1"
-            ><p class="no-ma">+47 98 45 67 86</p></i
+              ><p class="no-ma">+47 98 45 67 86</p></i
             >
-            <i class="fa-solid fa-message" id="info-icon2"><p class="no-ma">Chat</p></i>
+            <i class="fa-solid fa-message" id="info-icon2"
+              ><p class="no-ma">Chat</p></i
+            >
             <i class="fa-solid fa-at" id="info-icon"
-            ><p class="no-ma">gamehub@outlook.com</p></i
+              ><p class="no-ma">gamehub@outlook.com</p></i
             >
           </div>
 
           <form id="contact">
-            <input id="details" type="text" placeholder="Name:">
+            <input id="details" type="text" placeholder="Name:" />
           </form>
 
           <form id="contact2">
-            <input id="details2" type="text" placeholder="Email:">
+            <input id="details2" type="text" placeholder="Email:" />
           </form>
 
           <form id="contact-message" class="message-box">
@@ -179,10 +230,13 @@
         </div>
       </div>
     </div>
-<!-------------------------------- desktop footer--------------------------------->
+    <!-------------------------------- desktop footer--------------------------------->
     <footer class="desktop-footer">
       <div class="logo-fot">
-        <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
+        <img
+          src="/images/logo-img/GameHub_Logo.png"
+          alt="A gaming controller with the logo text and slogan written underneath it"
+        />
       </div>
       <div class="fottext-img">
         <p class="text-fot">
@@ -205,7 +259,10 @@
 
     <footer class="mobile-footer">
       <div class="logo-fot">
-        <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
+        <img
+          src="/images/logo-img/GameHub_Logo.png"
+          alt="A gaming controller with the logo text and slogan written underneath it"
+        />
       </div>
       <div class="fottext-img">
         <p class="text-fot">

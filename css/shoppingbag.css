@@ -6,10 +6,10 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 80px auto;
-  background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
+  /* background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%); */
   border-radius: 25px;
-  padding: 4%;
-  margin: 0% 12% 7%;
+  /* padding: 4%; */
+  /* margin: 0% 12% 7%; */
 }
 
 .prod-container,
@@ -34,11 +34,11 @@ p {
 #go-to-payment {
   margin: 0 auto;
   padding: 10px 24px;
-  background-color: #FF5C00;
+  background-color: #ff5c00;
   height: 40px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 0.9rem;
   display: inline-block;
   text-align: center;
   border-radius: 10px;
@@ -54,11 +54,11 @@ p {
 
 .h-shop,
 .p-shop {
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .h-shop {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 600;
 }
 
@@ -72,16 +72,19 @@ p {
   padding: 8% 0%;
 }
 
-#card-detail-1 input,
-#card-detail-2 input {
+input.promo_code__input {
   width: 70%;
   height: 45px;
   padding-left: 5%;
   margin: 2% 0%;
 }
 
+.discount_amount {
+  color: greenyellow;
+}
+
 input::placeholder {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #pricing-titles,

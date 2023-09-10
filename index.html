@@ -2,222 +2,358 @@
 <html lang="en">
   <head>
     <!-- ======================= METAS -->
+
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="Welcome to Game Hub - your ultimate destination for buying and selling computer games! Find the latest games and popular titles
-     from your favourite genres. Our online store offers a seamless browsing experience, easy payment options, and excellent customer service. Start your gaming journey with Game Hub today!">
+     from your favourite genres. Our online store offers a seamless browsing experience, easy payment options, and excellent customer service. Start your gaming journey with Game Hub today!"
+    />
 
     <!-- ======================= LINKS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Laila:wght@400;500&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="/GAMEHUB/css/style.css" />
-    <link rel="stylesheet" href="/GAMEHUB/css/home.css" />
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/home.css" />
 
     <!-- ======================= SCRIPTS -->
+
     <script
       src="https://kit.fontawesome.com/b515e79b0f.js"
       crossorigin="anonymous"
     ></script>
+
     <script defer type="module" src="/js/main.js"></script>
+    <script defer type="module" src="/js/miniCart.js"></script>
+    <script defer type="module" src="/js/menuMobile.js"></script>
 
     <title>GAMEHUB | HOME</title>
   </head>
-  
-<!------------------------------ header ------------------------------>
-<header>
-  <div class="header__logo">
-    <a href="/GAMEHUB/index.html"
-      ><img
-        class="logo"
-        src="/GAMEHUB/images/logo-img/GameHub_Logo.png"
-        alt="A gaming controller with the logo text and slogan written underneath it"
-    /></a>
-  </div>
 
-  <div class="header__navbar_container">
-    <input type="checkbox" id="menu-checkbox" />
-    <label for="menu-checkbox" class="hamburger-icon">
-      <i class="fas fa-bars"></i>
-    </label>
+  <body>
+    <!-- =========================== START HEADER =========================== -->
 
-    <nav class="header__navbar">
-      <a class="header__navbar_link" href="/GAMEHUB/index.html" id="selected">Home</a>
-      <a class="header__navbar_link" href="/GAMEHUB/pages/shop.html">Shop</a>
-      <a class="header__navbar_link" href="/GAMEHUB/pages/tradein.html">Trade</a>
-      <a class="header__navbar_link" href="/GAMEHUB/pages/contact.html">Contact</a>
-      <a class="header__navbar_link" href="/GAMEHUB/pages/about.html">About</a>
-    </nav>
-  </div>
-  <div class="header__navigator_container">
-    <nav class="header__navigator">
-      <a class="header__navigator_link" href="#">Log In / Sign Up</a>
-      <a class="header__navigator_link" href="/GAMEHUB/pages/shoppingbag.html">View Cart</a>
-    </nav>
-  </div>
-</header>
-<div class="searchcontainer">
-  <div class="searchbar">
-    <form>
-      <i class="fas fa-search"></i>
-      <input type="text" placeholder="Search" aria-label="searchbar" />
-    </form>
-  </div>
-</div>
-<!------------------------------main and aside------------------------------>   
-  <div class="desktop-version">
-  <main id="home-main-container">
-      <div class="heropic">
-        <a href="/GAMEHUB/pages/description.html"><img class="heropic" src="/GAMEHUB/images/first-page-img/elf-front-pic.png" alt="Three elves wering crowns in a forest"></a>
-     </div>
-     <div id="hero-container">
+    <header>
+      <div class="header__main">
+        <div class="header__logo">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="images/logo-img/GameHub_Logo.png"
+              alt="A gaming controller with the logo text and slogan written underneath it"
+          /></a>
+        </div>
 
-      <h1 class="headerhero">THE ELF HERO</h1>
-       <P>
-         Embark on an epic journey through a magical world as an elven hero in this thrilling RPG. 
-         Explore enchanted forests, solve puzzles, and battle fierce enemies as you uncover the
-         secrets of the elven kingdom.
-       </P>
-       <div class="asidepics">
-        <a href="/GAMEHUB/pages/description.html"><img id="asidepic1-mob" class="asidepic" src="/GAMEHUB/images/first-page-img/aside-pic1.png" alt="An elf fighting a warrior in front of a castle"></a>
-        <a href="/GAMEHUB/pages/description.html"><img id="asidepic2-mob" class="asidepic" src="/GAMEHUB/images/first-page-img/aside-pic2.png" alt="A warrior in front a castle"></a>
-        <a href="/GAMEHUB/pages/description.html"><img class="asidepic" src="/GAMEHUB/images/first-page-img/aside-pic3.png" alt="An elf fighting a warrior in the forest"></a>
-        <a href="/GAMEHUB/pages/description.html"><img class="asidepic" src="/GAMEHUB/images/first-page-img/aside-pic4.png" alt="An elf fighting a dragon in the forest"></a>
-      </div>
-       </div>
-      </main>
-  </div>  
-<!------------------------------MOBILE------------------------------> 
-  <div class="mobile-version">
-    <img class="heropic-mob" src="/images/first-page-img/elf-front-pic.png" alt="Three elves wering crowns in a forest">
+        <!-- ------------------ Navigations Desktop ------------------ -->
 
-   <h1 class="headerhero-mob">THE ELF HERO</h1>
-    <P>
-      Embark on an epic journey through a magical world as an elven hero in this thrilling RPG. 
-      Explore enchanted forests, solve puzzles, and battle fierce enemies as you uncover the
-      secrets of the elven kingdom.
-    </P>
-    <div class="asidepics-mobile">
-       <a href="description.html"><img id="asidepic1-mob" class="asidepics-mob" src="/images/first-page-img/aside-pic1.png" alt="An elf fighting a warrior in front of a castle"></a>
-       <a href="description.html"><img id="asidepic2-mob" class="asidepics-mob" src="/images/first-page-img/aside-pic2.png" alt="A warrior in front a castle"></a>
-       <a href="description.html"><img class="asidepics-mob" src="/images/first-page-img/aside-pic3.png" alt="An elf fighting a warrior in the forest"></a>
-       <a href="description.html"><img class="asidepics-mob" src="/images/first-page-img/aside-pic4.png" alt="An elf fighting a dragon in the forest"></a>
-    </div>
-  </div>
-<!------------------------------ section1 ------------------------------>
-  <section class="section1">
-    <div class="cont1">
-     <h1 class="head-line">FEATURED AND RECOMENDED</h1>
-    </div>
-    <div class="divider"></div>
+        <nav class="header__navbar">
+          <a class="header__navbar--link" href="index.html" id="selected"
+            >Home</a
+          >
+          <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
+        </nav>
 
-    <div class="cont2" id="cont-2-id-1">
-      <h2>Discover the Latest and Greatest Game</h2>
-      <p class="psec1">
-        Stay up-to-date with the latest games. Check out our selection of new
-         releases now available on the platform and Get your hands on the 
-         newest and most exciting games today.
-        </p>
-      <button class="orange">DISCOVER</button>
-    </div>
+        <nav class="header__navigator">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
 
-    <a href="/GAMEHUB/pages/description.html"><img 
-      class="section1pic align-right" 
-      src="/GAMEHUB/images/first-page-img/sec1-pic1.png" alt="A racing colorful car"></a>
-    <div class="divider"></div>
-  </section>
-  <!-------------------------------- section2 --------------------------------->
-  <section class="section2">
-    <section class="section1">
-      <div class="cont1">
-       <h1 class="head-line">NEW REALEASES</h1>
+        <!-- ------------------ Navigations Mobile ------------------ -->
+
+        <nav class="header__navigator--mobile outside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
+
+        <div class="menu_mobile"></div>
       </div>
 
-      <div class="section" id="section__new_release">
-       </div>
-       <div class="divider"></div>
-    </section>
-  </section>
-  <!-------------------------------- section3 --------------------------------->
-  <section class="section3">
-    <section class="section1">
-      <div class="cont1">
-       <h1 class="head-line">TRADE IN SELECTION</h1>
-      </div>
+      <div class="header__navigation_mobile">
+        <nav class="header__navbar--mobile">
+          <a class="header__navbar--link" href="index.html">Home</a>
+          <a class="header__navbar--link" href="/pages/shop.html">Shop</a>
+          <a class="header__navbar--link" href="/pages/tradein.html">Trade</a>
+          <a class="header__navbar--link" href="/pages/contact.html">Contact</a>
+          <a class="header__navbar--link" href="/pages/about.html">About</a>
+        </nav>
 
-      <div class="cont2" id="cont-2-id-2">
-        <h2>Get More for Your Games: Trade-In Today</h2>
-        <p class="psec1">
-          Trade in your old games for something new. Get great deals on the 
-          latest releases while giving your old games a second life. Upgrade 
-          your collection today!
-        </p>
-        <button class="orange">TRADE IN</button>
+        <nav class="header__navigator--mobile inside">
+          <a class="header__navigator--link" href="#">Log In / Sign Up</a>
+          <a class="header__navigator--link" href="/pages/shoppingbag.html">
+            View Cart
+            <span class="cart__count_indicator"></span>
+          </a>
+        </nav>
       </div>
-  
-      <a href="/GAMEHUB/pages/description.html"><img class="section1pic align-left"  src="/GAMEHUB/images/first-page-img/sec3-pic1.png" alt="One guy in the front and a guy and a girl in the background atarring at each other"></a>
-      <div class="divider"></div>
-   </section>
-  </section>
-  <!------------------------------- section4 --------------------------------->
-  <section class="section4">
-    <section class="section1">
-      <div class="cont1">
-       <h1 class="head-line">SPECIAL OFFERS</h1>
-      </div>
+    </header>
 
-      <div class="section" id="section__special_offers"></div>
-       <div class="divider"></div>
-   </section>
-  </section>
-  <!-------------------------------- section5 --------------------------------->
-  <section class="section5">
-    <section class="section1">
-      <div class="cont1">
-       <h1 class="head-line">NEWSLETTER</h1>
-      </div>
-
-      <div class="cont2" id="newsletter">
-        <h2>SIGN UP FOR OUR NEWSLETTER</h2>
-        <p class="psec1">
-          Subscribe to our newsletter to keep up with the latest deals from Game Hub!
-        </p>
-        <form action="subscribe" id="subscribe">
-          <input type="text" placeholder="name@email.com">
-          <button class="orange" id="sign-up">SIGN UP</button>
+    <div class="searchcontainer">
+      <div class="searchbar">
+        <form>
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Search" aria-label="searchbar" />
         </form>
       </div>
-   </section>
-  </section>
-<!-------------------------------- footer --------------------------------->
-  <footer class="desktop-footer">
-    <div class="logo-fot">
-      <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
     </div>
-    <div class="fottext-img">
-      <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website, including but not limited to text, graphics, logos,
-         images, and software, is the property of Game Hub and protected by international copyright laws. The reproduction, modification, distribution, 
-         or republication of the content without express written consent from Game Hub is strictly prohibited. Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
-      <p class="text-fot2"> Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      
-    </div> 
-  </footer>
-  <!-------------------------------- footer-mobile--------------------------------->
-  <footer class="mobile-footer">
-    <div class="logo-fot">
-      <img src="/GAMEHUB/images/logo-img/GameHub_Logo.png" alt="A gaming controller with the logo text and slogan written underneath it">
+
+    <!-- =========================== END HEADER =========================== -->
+
+    <!------------------------------main and aside------------------------------>
+    <div class="desktop-version">
+      <main id="home-main-container">
+        <div class="heropic">
+          <a href="/pages/description.html"
+            ><img
+              class="heropic"
+              src="/images/first-page-img/elf-front-pic.png"
+              alt="Three elves wering crowns in a forest"
+          /></a>
+        </div>
+        <div id="hero-container">
+          <h1 class="headerhero">THE ELF HERO</h1>
+          <p>
+            Embark on an epic journey through a magical world as an elven hero
+            in this thrilling RPG. Explore enchanted forests, solve puzzles, and
+            battle fierce enemies as you uncover the secrets of the elven
+            kingdom.
+          </p>
+          <div class="asidepics">
+            <a href="/pages/description.html"
+              ><img
+                id="asidepic1-mob"
+                class="asidepic"
+                src="/images/first-page-img/aside-pic1.png"
+                alt="An elf fighting a warrior in front of a castle"
+            /></a>
+            <a href="/pages/description.html"
+              ><img
+                id="asidepic2-mob"
+                class="asidepic"
+                src="/images/first-page-img/aside-pic2.png"
+                alt="A warrior in front a castle"
+            /></a>
+            <a href="/pages/description.html"
+              ><img
+                class="asidepic"
+                src="/images/first-page-img/aside-pic3.png"
+                alt="An elf fighting a warrior in the forest"
+            /></a>
+            <a href="/pages/description.html"
+              ><img
+                class="asidepic"
+                src="/images/first-page-img/aside-pic4.png"
+                alt="An elf fighting a dragon in the forest"
+            /></a>
+          </div>
+        </div>
+      </main>
     </div>
-    <div class="fottext-img">
-      <p class="text-fot">Copyright © 2023 Game Hub. All rights reserved. The content on this website is the property of Game Hub and protected by international copyright laws.</p> 
-      <p class="text-fot">Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds | Cookies</p>
-      <p class="text-fot">Game Hub | Our Careers | Contact US | Give us a feedback | Complains | FQA | Pay with</p>
-      
-    </div> 
-  </footer>
-</body>
+    <!------------------------------MOBILE------------------------------>
+    <div class="mobile-version">
+      <img
+        class="heropic-mob"
+        src="/images/first-page-img/elf-front-pic.png"
+        alt="Three elves wering crowns in a forest"
+      />
+
+      <h1 class="headerhero-mob">THE ELF HERO</h1>
+      <p>
+        Embark on an epic journey through a magical world as an elven hero in
+        this thrilling RPG. Explore enchanted forests, solve puzzles, and battle
+        fierce enemies as you uncover the secrets of the elven kingdom.
+      </p>
+      <div class="asidepics-mobile">
+        <a href="/pages/description.html"
+          ><img
+            id="asidepic1-mob"
+            class="asidepics-mob"
+            src="/images/first-page-img/aside-pic1.png"
+            alt="An elf fighting a warrior in front of a castle"
+        /></a>
+        <a href="/pages/description.html"
+          ><img
+            id="asidepic2-mob"
+            class="asidepics-mob"
+            src="/images/first-page-img/aside-pic2.png"
+            alt="A warrior in front a castle"
+        /></a>
+        <a href="/pages/description.html"
+          ><img
+            class="asidepics-mob"
+            src="/images/first-page-img/aside-pic3.png"
+            alt="An elf fighting a warrior in the forest"
+        /></a>
+        <a href="/pages/description.html"
+          ><img
+            class="asidepics-mob"
+            src="/images/first-page-img/aside-pic4.png"
+            alt="An elf fighting a dragon in the forest"
+        /></a>
+      </div>
+    </div>
+    <!------------------------------ section1 ------------------------------>
+    <section class="section1">
+      <div class="cont1">
+        <h1 class="head-line">FEATURED AND RECOMENDED</h1>
+      </div>
+      <div class="divider"></div>
+
+      <div class="cont2" id="cont-2-id-1">
+        <h2>Discover the Latest and Greatest Game</h2>
+        <p class="psec1">
+          Stay up-to-date with the latest games. Check out our selection of new
+          releases now available on the platform and Get your hands on the
+          newest and most exciting games today.
+        </p>
+        <button class="orange">DISCOVER</button>
+      </div>
+
+      <a href="/pages/description.html"
+        ><img
+          class="section1pic align-right"
+          src="/images/first-page-img/sec1-pic1.png"
+          alt="A racing colorful car"
+      /></a>
+      <div class="divider"></div>
+    </section>
+    <!-------------------------------- section2 --------------------------------->
+    <section class="section2">
+      <section class="section1">
+        <div class="cont1">
+          <h1 class="head-line">NEW REALEASES</h1>
+        </div>
+
+        <div class="section" id="section__new_release">
+          <div class="section_loading active"></div>
+          <div class="section_error inactive"></div>
+        </div>
+        <div class="divider"></div>
+      </section>
+    </section>
+    <!-------------------------------- section3 --------------------------------->
+    <section class="section3">
+      <section class="section1">
+        <div class="cont1">
+          <h1 class="head-line">TRADE IN SELECTION</h1>
+        </div>
+
+        <div class="cont2" id="cont-2-id-2">
+          <h2>Get More for Your Games: Trade-In Today</h2>
+          <p class="psec1">
+            Trade in your old games for something new. Get great deals on the
+            latest releases while giving your old games a second life. Upgrade
+            your collection today!
+          </p>
+          <button class="orange">TRADE IN</button>
+        </div>
+
+        <a href="/pages/description.html"
+          ><img
+            class="section1pic align-left"
+            src="/images/first-page-img/sec3-pic1.png"
+            alt="One guy in the front and a guy and a girl in the background atarring at each other"
+        /></a>
+        <div class="divider"></div>
+      </section>
+    </section>
+    <!------------------------------- section4 --------------------------------->
+    <section class="section4">
+      <section class="section1">
+        <div class="cont1">
+          <h1 class="head-line">SPECIAL OFFERS</h1>
+        </div>
+
+        <div class="section" id="section__special_offers">
+          <div class="section_loading active"></div>
+          <div class="section_error inactive"></div>
+        </div>
+        <div class="divider"></div>
+      </section>
+    </section>
+    <!-------------------------------- section5 --------------------------------->
+    <section class="section5">
+      <section class="section1">
+        <div class="cont1">
+          <h1 class="head-line">NEWSLETTER</h1>
+        </div>
+
+        <div class="cont2" id="newsletter">
+          <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+          <p class="psec1">
+            Subscribe to our newsletter to keep up with the latest deals from
+            Game Hub!
+          </p>
+          <form action="subscribe" id="subscribe">
+            <input type="text" placeholder="name@email.com" />
+            <button class="orange" id="sign-up">SIGN UP</button>
+          </form>
+        </div>
+      </section>
+    </section>
+    <!-------------------------------- footer --------------------------------->
+    <footer class="desktop-footer">
+      <div class="logo-fot">
+        <img
+          src="/images/logo-img/GameHub_Logo.png"
+          alt="A gaming controller with the logo text and slogan written underneath it"
+        />
+      </div>
+      <div class="fottext-img">
+        <p class="text-fot">
+          Copyright © 2023 Game Hub. All rights reserved. The content on this
+          website, including but not limited to text, graphics, logos, images,
+          and software, is the property of Game Hub and protected by
+          international copyright laws. The reproduction, modification,
+          distribution, or republication of the content without express written
+          consent from Game Hub is strictly prohibited. Privacy Policy | Legal |
+          Game Hub Subscriber Agreement | Refunds | Cookies
+        </p>
+        <p class="text-fot2">
+          Game Hub | Our Careers | Contact US | Give us a feedback | Complains |
+          FQA | Pay with
+        </p>
+      </div>
+    </footer>
+    <!-------------------------------- footer-mobile--------------------------------->
+    <footer class="mobile-footer">
+      <div class="logo-fot">
+        <img
+          src="/images/logo-img/GameHub_Logo.png"
+          alt="A gaming controller with the logo text and slogan written underneath it"
+        />
+      </div>
+      <div class="fottext-img">
+        <p class="text-fot">
+          Copyright © 2023 Game Hub. All rights reserved. The content on this
+          website is the property of Game Hub and protected by international
+          copyright laws.
+        </p>
+        <p class="text-fot">
+          Privacy Policy | Legal | Game Hub Subscriber Agreement | Refunds |
+          Cookies
+        </p>
+        <p class="text-fot">
+          Game Hub | Our Careers | Contact US | Give us a feedback | Complains |
+          FQA | Pay with
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

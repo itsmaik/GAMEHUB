@@ -157,16 +157,21 @@
 }
 
 .h1-desc {
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 30px;
 }
+
+/* .price_main {
+} */
+
 .price_main p {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 300;
-  color: white;
 
+  color: white;
 }
 
 .price_discount {
@@ -176,12 +181,15 @@
   row-gap: 2px;
   padding: 16px 0;
 }
+
 .price_discount p {
   margin: 0;
+
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   font-weight: 300;
   text-decoration: line-through;
+
   color: white;
 }
 
@@ -189,5 +197,6 @@
   font-family: "Poppins", sans-serif;
   font-size: 18px;
   font-weight: 500;
+
   color: white;
 }
