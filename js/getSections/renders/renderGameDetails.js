@@ -33,7 +33,7 @@ export default function renderGameDetails(game) {
 
       <div class="game-desc-1">
         <h1 class="h1-desc">${game.title}</h1>
-        ${priceToRender}
+        ${priceToRender(game)}
         <form id="card-detail-1" action="post">
           <input type="number" value="1" />
         </form>
