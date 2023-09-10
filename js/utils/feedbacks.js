@@ -52,6 +52,24 @@ const hideDescriptionLoading = () => {
 
 // --> TRADE IN SELECTION
 
+const loadingTradeSections = document.querySelectorAll(
+  ".trade_section_loading"
+);
+
+const displayTradeSectionLoading = () => {
+  loadingTradeSections.forEach((tradeSection) => {
+    tradeSection.classList.add("active");
+    tradeSection.classList.remove("inactive");
+  });
+};
+
+const hideTradeSectionLoading = () => {
+  loadingTradeSections.forEach((tradeSection) => {
+    tradeSection.classList.remove("active");
+    tradeSection.classList.add("inactive");
+  });
+};
+
 // ================== ERROR CONTROLLER ================== //
 
 // --> SECTION
@@ -116,6 +134,27 @@ const hideDescriptionError = () => {
 
 // --> TRADE IN SELECTION
 
+const errorTradeSections = document.querySelectorAll(".trade_section_error");
+
+const displayTradeSectionError = (errorMessage) => {
+  errorTradeSections.forEach((tradeSection) => {
+    const defaultMessage = "An error occurred while loading the data.";
+    tradeSection.innerHTML = errorMessage ? errorMessage : defaultMessage;
+
+    tradeSection.classList.add("active");
+    tradeSection.classList.remove("inactive");
+  });
+};
+
+const hideTradeSectionError = () => {
+  errorTradeSections.forEach((tradeSection) => {
+    tradeSection.innerHTML = "";
+
+    tradeSection.classList.remove("active");
+    tradeSection.classList.add("inactive");
+  });
+};
+
 export {
   // Loading Functions Export
   displaySectionLoading,
@@ -124,6 +163,8 @@ export {
   hideSliderLoading,
   displayDescriptionLoading,
   hideDescriptionLoading,
+  displayTradeSectionLoading,
+  hideTradeSectionLoading,
 
   // Errors Functions Export
   displaySectionError,
@@ -132,4 +173,6 @@ export {
   hideSliderError,
   displayDescriptionError,
   hideDescriptionError,
+  displayTradeSectionError,
+  hideTradeSectionError,
 };

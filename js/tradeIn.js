@@ -2,27 +2,27 @@ import fetchGameData from "./utils/fetchGameData.js";
 import getTradeInSections from "./getSections/getTradeInSections.js";
 
 import {
-  hideSectionLoading,
-  displaySectionError,
-  hideSectionError,
+  hideTradeSectionLoading,
+  displayTradeSectionError,
+  hideTradeSectionError,
 } from "./utils/feedbacks.js";
 
 const gamesDataPromise = fetchGameData();
 
 gamesDataPromise
   .then((gamesData) => {
-    hideSectionLoading();
+    hideTradeSectionLoading();
 
     if (gamesData.errors) {
-      displaySectionError("An error occurred while loading the data.");
+      displayTradeSectionError("An error occurred while loading the data.");
     } else {
-      hideSectionError();
+      hideTradeSectionError();
 
       getTradeInSections(gamesData);
     }
   })
   .catch((error) => {
-    hideSectionLoading();
+    hideTradeSectionLoading();
 
-    displaySectionError("An error occurred while loading the data.");
+    displayTradeSectionError("An error occurred while loading the data.");
   });

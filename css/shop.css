@@ -78,10 +78,6 @@
   cursor: pointer;
 }
 
-#section__top_sellers .product_card a {
-  display: block;
-}
-
 /*----------------------------------------- trade-in selection ---------------------------------------*/
 
 #sort-by {
@@ -167,12 +163,11 @@
 @media only screen and (min-width: 0px) and (max-width: 968px) {
   .grid-standard-1,
   .grid-standard-2 {
-    grid-template-columns: 100% !important;
-    grid-template-rows: repeat(5, 400px) !important;
-    height: auto !important;
-    padding-top: 100px;
-    justify-items: center;
-    gap: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    row-gap: 10px;
   }
 
   .grid-scr {
@@ -180,25 +175,18 @@
     margin: 10% 0%;
   }
 
-  .grid-standard-2 {
-    margin-bottom: 30%;
-  }
-
+  .img-standard-1,
+  .img-standard-2,
   .img-standard {
     width: 80%;
   }
-  #pic3 {
-    grid-column-start: 1 !important;
-  }
-  #pic2 {
-    grid-row-start: 1 !important;
-    grid-column-start: 1 !important;
-  }
+
   .img-standard-1 img,
   .img-standard-2 img,
+  .img-standard-1,
+  .img-standard-2,
   .img-standard {
-    height: 400px;
-    margin: 5% 0%;
+    height: 100%;
   }
 }
 

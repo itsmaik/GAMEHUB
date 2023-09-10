@@ -7,9 +7,10 @@
 .buy-sell,
 .trade-in-p {
   margin-top: 40px;
+  margin-bottom: 0;
   width: 50%;
   padding: 4% 0%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -46,7 +47,7 @@
     display: flex;
     justify-content: center;
   }
-  
+
   .buy-sell {
     font-size: 50px;
   }
@@ -72,22 +73,6 @@
     left: 60%;
   }
 
-  .grid-standard-1,
-  .grid-standard-2 {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .img-standard-1 img,
-  .img-standard-2 img,
-  .img-standard {
-    height: 400px;
-    margin: 5% 0%;
-  }
-
   .head-line::before,
   .head-line::after {
     width: 9%;
@@ -103,7 +88,6 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1080px) {
-  
   .trade-in-text {
     display: flex;
     flex-direction: column;
@@ -112,7 +96,7 @@
     width: 90%;
     margin: 0 auto;
   }
-  
+
   .buy-sell {
     font-size: 80px;
     height: auto;
@@ -141,26 +125,6 @@
     justify-content: center;
   }
 
-  .grid-standard-1,
-  .grid-standard-2 {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .img-standard-1 img,
-  .img-standard-2 img {
-    height: 700px;
-    margin: 5% 0%;
-  }
-
-  .img-standard {
-    height: 600px;
-    padding: 5% 0%;
-  }
-
   .head-line::before,
   .head-line::after {
     width: 9%;
@@ -180,5 +144,35 @@
     width: 50px;
     align-items: center;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1080px) {
+  .grid-standard-1,
+  .grid-standard-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    row-gap: 10px;
+  }
+
+  .grid-scr {
+    gap: 10%;
+    margin: 10% 0%;
+  }
+
+  .img-standard-1,
+  .img-standard-2,
+  .img-standard {
+    width: 80%;
+  }
+
+  .img-standard-1 img,
+  .img-standard-2 img,
+  .img-standard-1,
+  .img-standard-2,
+  .img-standard {
+    height: 100%;
   }
 }

@@ -220,4 +220,20 @@ export default function renderShoppingBag(gamesData) {
       setCartCounter();
     });
   });
+  // ----------------------------------------- CONTROL IF CART IS EMPTY
+
+  const cartContainer = document.querySelector(".cart_container");
+  const cartContainerEmpty = document.querySelector(".cart_container_empty");
+
+  if (cartItems.length > 0) {
+    cartContainer.classList.remove("hidden");
+    cartContainer.classList.add("shown");
+    cartContainerEmpty.classList.remove("shown");
+    cartContainerEmpty.classList.add("hidden");
+  } else {
+    cartContainer.classList.remove("shown");
+    cartContainer.classList.add("hidden");
+    cartContainerEmpty.classList.remove("hidden");
+    cartContainerEmpty.classList.add("shown");
+  }
 }
