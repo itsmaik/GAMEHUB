@@ -41,6 +41,7 @@ h1 {
   font-size: 32px;
   color: #FF6001;
   line-height: 0.5;
+  margin-bottom: 3%;
 }
 
 .h2-about {
@@ -68,7 +69,7 @@ h1 {
 
 @media (max-width: 1454px) {
   .cont1, .cont2-2, .cont3 {
-    padding: 1% 2%;
+    /*padding: 1% 2%;*/
     width: 60%;
   }
 
@@ -79,7 +80,7 @@ h1 {
   }
 
 .h2-about {
-  font-size: 18px;
+  /*font-size: 18px;*/
 }
 
 .p-about {
