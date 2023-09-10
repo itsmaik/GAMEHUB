@@ -16,7 +16,7 @@
 
 #filter,
 #best-match {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
   display: flex;
@@ -41,25 +41,37 @@
 /*----------------------------------------- top sellers ---------------------------------------*/
 
 .grid-scr {
-  margin: 80px 0px;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  display: flex;
   overflow: scroll;
-  gap: 80px;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  scroll-behavior: smooth;
+  overflow-y: hidden;
+  margin: 80px 20px;
+  padding-bottom: 20px;
 }
 
 .grid-scr::-webkit-scrollbar {
-  width: 0;
-  height: 0;
+  height: 8px;
+}
+
+.grid-scr::-webkit-scrollbar-track {
+  background: #003250;
+  border-radius: 10px;
+}
+
+.grid-scr::-webkit-scrollbar-thumb {
+  background: #020e16;
+  border-radius: 10px;
+}
+
+#section__top_sellers {
+  display: flex;
+  gap: 40px;
 }
 
 .img-scr {
   width: 370px;
   height: 480px;
   object-fit: cover;
+  pointer-events: none;
 }
 
 .grid-scr:hover {
@@ -164,7 +176,7 @@
     margin: 10% 0%;
   }
 
-  .grid-standard-2{
+  .grid-standard-2 {
     margin-bottom: 30%;
   }
 
