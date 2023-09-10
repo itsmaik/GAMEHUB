@@ -78,6 +78,10 @@
   cursor: pointer;
 }
 
+#section__top_sellers .product_card a {
+  display: block;
+}
+
 /*----------------------------------------- trade-in selection ---------------------------------------*/
 
 #sort-by {

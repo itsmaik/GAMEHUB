@@ -153,6 +153,10 @@
   text-align: center;
 }
 
+.contact-info-icons p {
+  margin-top: 12px;
+}
+
 #contact,
 #contact2,
 #contact-message {

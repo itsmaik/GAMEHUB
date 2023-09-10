@@ -30,6 +30,14 @@ p {
   object-fit: cover;
 }
 
+.buy__button__container {
+  margin-bottom: 24px;
+  width: 100%;
+}
+.buy__button__container button {
+  width: 190px;
+}
+
 #continue-btn,
 #go-to-payment {
   margin: 0 auto;
@@ -110,4 +118,8 @@ input::placeholder {
 
 .bold {
   font-weight: 500;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  
 }
