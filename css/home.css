@@ -1,7 +1,7 @@
 /*-------------------------------------- main --------------------------------------*/
 .heropic {
   width: 60%;
-  height: 880px;
+  height: 735px;
   object-fit: cover;
 }
 
@@ -12,7 +12,7 @@
 
 main {
   background-color: #003250;
-  height: 940px;
+  height: 765px;
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +85,7 @@ main {
   flex-direction: column;
   width: 90%;
   height: 372px;
-  margin: 50px auto 180px;
+  margin: 30px auto 180px;
 }
 
 #newsletter h2 {

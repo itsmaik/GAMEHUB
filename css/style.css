@@ -20,6 +20,7 @@ body {
   font-family: "Poppins", sans-serif;
 
   overflow-x: hidden;
+  border: #003251 8px solid;
 }
 
 body::-webkit-scrollbar {
@@ -256,7 +257,7 @@ header {
   z-index: 10;
   display: flex;
   background-color: #003250;
-  height: 65px;
+  height: 80px;
   flex-wrap: nowrap;
   align-items: center;
 }
@@ -264,7 +265,7 @@ header {
 .searchbar {
   position: relative;
   background-color: white;
-  width: 40%;
+  width: 41.3%;
   height: 28px;
   margin-left: 240px;
   margin-bottom: 5px;
@@ -387,9 +388,16 @@ button {
 .text-fot,
 .text-fot2 {
   font-weight: 400;
-  font-size: 12px;
-  text-align: left;
-  padding-left: 40px;
+  font-size: 14px;
+  padding: 1% 0%;
+}
+
+.fottext-img {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text-fot2::after {
