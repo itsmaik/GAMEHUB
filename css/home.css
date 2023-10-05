@@ -132,6 +132,7 @@ main {
 @media only screen and (max-width: 767px) {
   .heropic {
     width: 100% !important;
+    height: 330px;
   }
 
   #hero-container {
