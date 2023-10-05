@@ -43,6 +43,10 @@ main {
   margin: 2%;
 }
 
+#cont-2-id-2 {
+  margin-left: 5.5% ;
+}
+
 .cont2 {
   background: linear-gradient(180deg, #003250 0%, rgba(0, 50, 80, 0) 100%);
 }
