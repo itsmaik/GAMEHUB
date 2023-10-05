@@ -38,7 +38,8 @@ main {
   border-radius: 60px;
   height: 669px;
   width: 44%;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
   margin: 2%;
 }
 
@@ -128,12 +129,13 @@ main {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .heropic {
     width: 100% !important;
   }
 
   #hero-container {
     width: 100% !important;
+    padding-right: 0px;
   }
 }
