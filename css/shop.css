@@ -96,13 +96,14 @@
 }
 
 .grid-standard-1 {
-  grid-template-columns: 46% 25% 25%;
+  grid-template-columns: 40% 25% 25%;
+  padding-left: 6%;
 }
 
 .grid-standard-2 {
   margin-top: 2%;
-  justify-items: center;
-  grid-template-columns: 25% 25% 46%;
+  grid-template-columns: 25% 25% 40%;
+  padding-left: 6%;
 }
 
 .img-standard-1 img,
@@ -168,6 +169,7 @@
     align-items: center;
     height: fit-content;
     row-gap: 10px;
+    padding-left: 2%;
   }
 
   .grid-scr {
