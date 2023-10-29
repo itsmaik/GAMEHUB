@@ -22,8 +22,7 @@ gamesDataPromise
       const params = new URLSearchParams(queryString);
       const id = params.get("id");
 
-      const currentGame = gamesData.find((game) => game.id === id);
-
+      const currentGame = gamesData.find((game) => game.id == id);
       getDescriptionSections(currentGame);
     }
   })

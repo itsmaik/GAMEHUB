@@ -21,12 +21,18 @@ function getNewReleases(gamesData) {
 
 function getSpecialOffers(gamesData) {
   var ofertasEspeciais = gamesData.filter(function (jogo) {
-    return jogo.discountedPrice !== jogo.price;
+
+    const price = Number(jogo.prices.regular_price)
+    const salePrice = Number(jogo.prices.sale_price)
+    return salePrice !== price;
   });
 
   ofertasEspeciais.sort(function (a, b) {
-    var porcentagemA = ((a.price - a.discountedPrice) / a.price) * 100;
-    var porcentagemB = ((b.price - b.discountedPrice) / b.price) * 100;
+
+
+    
+    var porcentagemA = ((Number(a.prices.regular_price) - Number(a.prices.sale_price)) / Number(a.prices.sale_price)) * 100;
+    var porcentagemB = ((b.prices.regular_price - b.prices.sale_price) / b.price) * 100;
     return porcentagemB - porcentagemA;
   });
 

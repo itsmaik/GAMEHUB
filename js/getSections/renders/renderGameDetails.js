@@ -5,7 +5,7 @@ const gameContainer = document.querySelector("#section__game_details");
 
 export default function renderGameDetails(game) {
   const priceToRender = (game) => {
-    if (game.price !== game.discountedPrice) {
+    if (game.prices.price !== game.prices.sale_price) {
       return `
         <div class="product_details__price_discount">
           <p>${formatCurrency(game.price)}</p>
@@ -15,7 +15,7 @@ export default function renderGameDetails(game) {
     } else {
       return `
         <div class="product_details__price">
-          <p>${formatCurrency(game.price)}</p>
+          <p>${formatCurrency(game.prices.price)}</p>
         </div>
       `;
     }
@@ -26,13 +26,13 @@ export default function renderGameDetails(game) {
       <div>
         <img
           class="box1-pic1"
-          src="${game.image}"
+          src="${game.images[0].src}"
           alt=""
         />
       </div>
 
       <div class="game-desc-1">
-        <h1 class="h1-desc">${game.title}</h1>
+        <h1 class="h1-desc">${game.name}</h1>
         ${priceToRender(game)}
         <form id="card-detail-1" action="post">
           <input type="number" value="1" />
@@ -43,7 +43,7 @@ export default function renderGameDetails(game) {
     <div class="grid-box-2">
       <img
         class="box2-pic1"
-        src="${game.image}"
+        src="${game.images[0].src}"
         alt="A warrior in front a castle"
       />
       <div class="game-desc-2">

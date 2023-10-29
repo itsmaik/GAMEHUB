@@ -3,7 +3,7 @@
 function removeToCart(productId) {
   let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 
-  const index = cartItems.findIndex((item) => item.id === productId);
+  const index = cartItems.findIndex((item) => item.id == productId);
 
   if (index !== -1) {
     cartItems.splice(index, 1);
@@ -69,10 +69,10 @@ function getTotalValue(gamesData) {
   let totalValue = 0;
 
   cartItems.forEach((item) => {
-    const game = gamesData.find((game) => game.id === item.id);
+    const game = gamesData.find((game) => game.id == item.id);
 
     if (game) {
-      totalValue += game.discountedPrice * item.quantity;
+      totalValue += game.prices.sale_price * item.quantity;
     }
   });
 
