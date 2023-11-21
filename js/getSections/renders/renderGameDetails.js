@@ -5,6 +5,7 @@ const gameContainer = document.querySelector("#section__game_details");
 
 export default function renderGameDetails(game) {
   const priceToRender = (game) => {
+
     if (game.prices.price !== game.prices.sale_price) {
       return `
         <div class="product_details__price_discount">
