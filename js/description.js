@@ -7,28 +7,25 @@ import {
   hideDescriptionError,
 } from "./utils/feedbacks.js";
 
-const gamesDataPromise = fetchGameData();
 
-gamesDataPromise
-  .then((gamesData) => {
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
+
+const currentGame = await fetchGameData(`/${id}`);
+
+
+// currentGame.then((gamesData) => {
+
     hideDescriptionLoading();
 
-    if (gamesData.errors) {
+    if (currentGame.errors) {
+  
       displayDescriptionError("An error occurred while loading the data.");
+      
     } else {
       hideDescriptionError();
 
-      const queryString = document.location.search;
-      const params = new URLSearchParams(queryString);
-      const id = params.get("id");
-
-      const currentGame = gamesData.find((game) => game.id === id);
 
       getDescriptionSections(currentGame);
     }
-  })
-  .catch((error) => {
-    hideDescriptionLoading();
-
-    displayDescriptionError("An error occurred while loading the data.");
-  });

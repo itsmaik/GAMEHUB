@@ -9,14 +9,14 @@ export default function renderTopSellers(gamesData) {
     if (game.price !== game.discountedPrice) {
       return `
         <div class="product_details__price_discount">
-          <p>${formatCurrency(game.price)}</p>
-          <b>${formatCurrency(game.discountedPrice)}</b>
+          <p>${formatCurrency(game.prices.price)}</p>
+          <b>${formatCurrency(game.prices.sale_price)}</b>
         </div>
       `;
     } else {
       return `
         <div class="product_details__price">
-          <p>${formatCurrency(game.price)}</p>
+          <p>${formatCurrency(game.prices.price)}</p>
         </div>
       `;
     }
@@ -27,11 +27,11 @@ export default function renderTopSellers(gamesData) {
       <a href="/pages/description.html?id=${game.id}">
         <img 
           class="img-scr" 
-          src="${game.image}" 
+          src="${game.images[0].src}" 
           alt="${game.description}"
         />
         <div class="product_details">
-          <b>${game.title}</b>
+          <b>${game.name}</b>
           ${priceToRender(game)}
         </div>
       </a>

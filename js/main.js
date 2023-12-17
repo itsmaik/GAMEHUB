@@ -8,21 +8,21 @@ import {
 } from "./utils/feedbacks.js";
 
 const gamesDataPromise = fetchGameData();
-
 gamesDataPromise
   .then((gamesData) => {
     hideSectionLoading();
 
-    if (gamesData.errors) {
-      displaySectionError("An error occurred while loading the data.");
-    } else {
-      hideSectionError();
+    // if (gamesData.errors) {
+    //   displaySectionError("An error occurred while loading the data.");
+    // } else {
+    //   // hideSectionError();
 
       getHomeSections(gamesData);
     }
-  })
-  .catch((error) => {
-    hideSectionLoading();
+// }
+  )
+  // .catch((error) => {
+  //   hideSectionLoading();
 
-    displaySectionError("An error occurred while loading the data.");
-  });
+  //   displaySectionError("An error occurred while loading the data.");
+  // });

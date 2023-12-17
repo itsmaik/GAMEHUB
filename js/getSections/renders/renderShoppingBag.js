@@ -12,17 +12,17 @@ import {
 
 export default function renderShoppingBag(gamesData) {
   const priceToRender = (game) => {
-    if (game.price !== game.discountedPrice) {
+    if (game.price !== game.prices.sale_price) {
       return `
         <div class="product_details__price_discount">
-          <p>${formatCurrency(game.price)}</p>
-          <b>${formatCurrency(game.discountedPrice)}</b>
+          <p>${formatCurrency(game.prices.price)}</p>
+          <b>${formatCurrency(game.prices.sale_price)}</b>
         </div>
       `;
     } else {
       return `
         <div class="product_details__price">
-          <p>${formatCurrency(game.price)}</p>
+          <p>${formatCurrency(game.prices.price)}</p>
         </div>
       `;
     }
@@ -30,24 +30,24 @@ export default function renderShoppingBag(gamesData) {
 
   const cardToRender = (game, quantity) => {
     const priceToCalculate =
-      game.price !== game.discountedPrice ? game.discountedPrice : game.price;
+      game.prices.price !== game.prices.sale_price ? game.prices.sale_price : game.prices.price;
 
-    const calculatedPrice = priceToCalculate * quantity;
+    const calculatedPrice = Number(priceToCalculate) * quantity;
 
     const formatedPrice = formatCurrency(calculatedPrice);
 
     return `
     <div class="cart__products_item">
       <div class="cart__product_detail">
-        <img src="${game.image}" alt="${game.description}" />
+        <img src="${game.images[0].src}" alt="${game.description}" />
       </div>
 
       <div class="cart__product_detail">
-        <h1 class="h-shop">${game.title}</h1>
+        <h1 class="h-shop">${game.name}</h1>
       </div>
 
       <div class="cart__product_detail">
-        <p class="p-shop">${game.genre}</p>
+        <p class="p-shop">${game.categories[0].name}</p>
       </div>
 
       <div class="cart__product_detail">
