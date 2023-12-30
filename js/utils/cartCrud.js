@@ -18,7 +18,7 @@ function addToCart(productId, quantity) {
   console.log(productId, quantity);
 
   if (quantity <= 0) {
-    removeToCart(produtoId);
+    removeToCart(productId);
     return;
   }
 
