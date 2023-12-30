@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  max-width: 1600px;
+  max-width: 1440px;
   height: auto;
   margin: 0 auto;
   padding: 0;
@@ -237,7 +237,7 @@ header {
   align-items: center;
   width: 100%;
   height: fit-content;
-  padding: 20px;
+  padding: 10px;
 
   transform: translateY(0);
   transition: 0.3s all;
@@ -382,18 +382,6 @@ button {
 .fottext-img {
   margin: auto;
 }
-
-/*.text-fot2::after {
-  content: "";
-  display: inline-block;
-  background-image: url(/images/payment\ footer.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 500px;
-  height: 18px;
-  position: absolute;
-}*/
 
 .mobile-version,
 .mobile-footer {
@@ -1107,7 +1095,6 @@ button.cart__product_detail__exclude {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    padding-right: 35px;
   }
 
   .home_section {
